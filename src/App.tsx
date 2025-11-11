@@ -33,7 +33,7 @@ function App() {
       </div>
     <div className="image-container">
       <div className="image-border"></div>
-      <img src="./bilder/Image.png" alt="image of ashley" className="ash-pic" />
+      <img src="./assets/Image.png" alt="image of ashley" className="ash-pic" />
       <div className="image-box">
         <p className="paragprah">Contact</p>
         <ul className="icon-list">
@@ -111,6 +111,8 @@ function App() {
     ></script>
          </>
   )
+
 }
 
 export default App
+//TODO: ask : css sorting, for each container different file, adding of js function
