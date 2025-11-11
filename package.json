@@ -3,9 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "ashley.thiering.org",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
+    "start": "vite",
+    "build": "tsc -b && vite build && start",
     "lint": "eslint .",
     "preview": "vite preview"
   },
