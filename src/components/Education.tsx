@@ -1,6 +1,29 @@
+import { useEffect, useRef } from 'react';
 import '../style/education.css'
 
 function Education(){
+  useEffect(() => {
+    const cards = document.querySelectorAll(".card");
+    if (!cards || cards.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+      }
+    );
+
+    cards.forEach((card) => observer.observe(card));
+
+  }, []);
+
 
     return(
         <div className="education-section">

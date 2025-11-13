@@ -1,6 +1,6 @@
 import '../style/start.css'
 import AshPic from "../assets/Image.png";
-import { IoLocationOutline, IoMailOutline } from 'react-icons/io5';
+import { IoLocationOutline, IoLogoGithub, IoLogoLinkedin, IoMailOutline } from 'react-icons/io5';
 import { useRef } from 'react';
 
 function Start(){
@@ -72,13 +72,11 @@ const handleLocationEnd = () => {
           </li>
           <li>
             <a href="https://github.com/leaa321">
-            {/* github icon */}
-              <IoMailOutline className="icon"/>
+              <IoLogoGithub className="icon"/>
             </a>
           </li>
           <li><a href="https://de.linkedin.com/in/lea-drewes">
-          {/* linkedin icon */}
-              <IoMailOutline className="icon"/>
+              <IoLogoLinkedin className="icon"/>
           </a></li>
         </ul>
       </div>
