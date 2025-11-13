@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react'
+import { useEffect, useState } from 'react'
 import Header from '../components/Header'
 import Start from '../components/Start'
 import Education from '../components/Education'
@@ -32,6 +32,4 @@ const [theme, setTheme] = useState<'light' | 'dark'>('light')
 }
 
 export default App
-//TODO: adding of js function
-//TODO: for each component different tsx and css, Header, Start, Education, Skills, projects, footer
 //TODO: filter out component that are used multiple times

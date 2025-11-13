@@ -29,7 +29,6 @@
 .handToggle.animate {
   animation: wave 1s ease-in-out;
 }
-/* TODO: add animation of wave */
 
 @keyframes wave {
   0% {
