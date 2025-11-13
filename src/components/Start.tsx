@@ -1,4 +1,6 @@
 import '../style/start.css'
+import AshPic from "../assets/Image.png";
+
 
 function Start(){
 
@@ -22,7 +24,7 @@ function Start(){
       </div>
     <div className="image-container">
       <div className="image-border"></div>
-      <img src="./assets/react.svg" alt="image of ashley" className="ash-pic" />
+      <img src={AshPic} alt="image of ashley" className="ash-pic" />
       <div className="image-box">
         <p className="paragprah">Contact</p>
         <ul className="icon-list">

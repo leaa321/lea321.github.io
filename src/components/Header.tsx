@@ -1,13 +1,17 @@
 import '../style/header.css'
 
-function Header(){
+type HeaderProps = {
+  onToggleTheme: () => void
+}
 
-    return(
+function Header({ onToggleTheme }: HeaderProps){
+return(
 <header>
           <a className="name-header" href="#home">ASHLEY</a>
-          <button className="material-symbols-outlined darkmode" id="toggleMode">
+          <button className="material-symbols-outlined darkmode" id="toggleMode" onClick={onToggleTheme}>
           rainy
         </button>
+        
         </header>
 
     )

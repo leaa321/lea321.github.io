@@ -1,5 +1,4 @@
-import { useState } from 'react'
-import './App.css'
+import { useEffect, useState } from 'react'
 import Header from '../components/Header'
 import Start from '../components/Start'
 import Education from '../components/Education'
@@ -7,24 +6,25 @@ import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 
 function App() {
-  const [count, setCount] = useState(0)
+const [theme, setTheme] = useState<'light' | 'dark'>('light')
+
+  useEffect(() => {
+    document.body.classList.remove('light', 'dark')
+    document.body.classList.add(theme)
+  }, [theme])
+
+  const toggleTheme = () => {
+    setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
+  }
 
   return (
     <>
-    <Header/>
+    <Header onToggleTheme={toggleTheme}/>
     <Start/>
     <Education/>
     <Skills/>
     <Projects/>
 <footer>© 2025 Ashley Drewes. All rights reserved.</footer>        
-
-<script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
          </>
   )
 
