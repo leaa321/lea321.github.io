@@ -1,11 +1,10 @@
 import '../style/start.css'
 import AshPic from "../assets/Image.png";
-
+import { IoLocationOutline } from 'react-icons/io5';
 
 function Start(){
 
     return(
-<div className="start-section">
       <div className="start-page-container">
       <div className="text-container">
         <div className="text-box-title">
@@ -13,7 +12,7 @@ function Start(){
             Hi I'm Ashley! <span className="handToggle">👋</span>
           </h1>
           <a href="https://www.google.com/maps/search/Bremen" className="location">
-          {/* <ion-icon name="location-outline"></ion-icon> */} Germany, Bremen
+        <IoLocationOutline/>Germany, Bremen
           </a>
         </div>
         <p className="text-box">
@@ -22,6 +21,7 @@ function Start(){
             enjoy playing volleyball, editing Video, running and cooking!
         </p>
       </div>
+
     <div className="image-container">
       <div className="image-border"></div>
       <img src={AshPic} alt="image of ashley" className="ash-pic" />
@@ -30,7 +30,7 @@ function Start(){
         <ul className="icon-list">
           <li>
             <a href="mailto:lea.maria.drewes@gmail.com">
-              {/* email icon */}
+              {/* email icon iconclass*/}
             </a>
           </li>
           <li>
@@ -45,7 +45,6 @@ function Start(){
       </div>
     </div>
     </div>
-        </div>   
 
     )
 }

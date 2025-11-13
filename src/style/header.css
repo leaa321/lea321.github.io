@@ -21,7 +21,7 @@ header {
   transition: transform 1s ease;
 }
 
-.material-symbols-outlined {
+.icon {
   border: none;
   box-shadow: none;
   cursor: pointer;
@@ -29,6 +29,6 @@ header {
   transition: transform 0.3s ease;
 }
 
-.material-symbols-outlined:hover {
+.icon:hover {
   transform: scale(1.2);
 }

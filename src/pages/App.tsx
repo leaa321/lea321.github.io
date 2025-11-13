@@ -5,6 +5,7 @@ import Education from '../components/Education'
 import Skills from '../components/Skills'
 import Projects from '../components/Projects'
 
+
 function App() {
 const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
@@ -19,7 +20,7 @@ const [theme, setTheme] = useState<'light' | 'dark'>('light')
 
   return (
     <>
-    <Header onToggleTheme={toggleTheme}/>
+    <Header onToggleTheme={toggleTheme} theme={theme}/>
     <Start/>
     <Education/>
     <Skills/>
