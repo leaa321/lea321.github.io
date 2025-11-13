@@ -71,3 +71,9 @@ footer {
   font-size: 14px;
   color: var(--color-muted);
 }
+
+@media (width >= 1000px) {
+  h1 {
+    font-size: 3rem;
+  }
+}

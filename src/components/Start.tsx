@@ -53,7 +53,7 @@ const handleLocationEnd = () => {
           </a>
         </div>
         <p className="text-box">
-          Im currently doing my apprenticeship at HEC as a software Engineer.
+          I'm currently doing my apprenticeship at HEC as a software Engineer.
             I have a passion for coding. Outside of career and academics, I
             enjoy playing volleyball, editing Video, running and cooking!
         </p>

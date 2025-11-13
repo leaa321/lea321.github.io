@@ -112,6 +112,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  align-items: center;
 }
 
 .text-box-title h1 {
@@ -202,19 +203,19 @@
   padding-top: 3rem;
 }
 
-@media (width > 1000px) {
+@media (width >= 1000px) {
   .start-page-container {
     flex-direction: row-reverse;
     width: 70%;
     padding-top: 0rem;
     margin: auto;
   }
-  .text-box-title {
-    font-size: 3rem;
+  .text-box-title h1 {
+    font-size: 3 rem;
     font-weight: lighter;
   }
   .text-box {
-    font-size: 35px;
+    font-size: 30px;
   }
   .image-container {
     height: 70%;
@@ -228,9 +229,7 @@
   .icon {
     font-size: 80px;
   }
-  h1 {
-    font-size: 3rem;
-  }
+
   .image-box {
     height: 20%;
   }
@@ -239,39 +238,34 @@
   }
 }
 
-/* @media (width >= 700px) {
-  .start-page-container {
-    flex-direction: row-reverse;
-    width: 70%;
-    padding-top: 0rem;
-    margin: auto;
+@media (height < 850px) {
+  .icon {
+    font-size: 60px;
   }
-  .start-text-box1 {
-    font-size: 2rem;
-    font-weight: lighter;
-  }
-  .start-text-box2 {
-    font-size: 20px;
-  }
-  .image-container {
-    height: 70%;
-  }
-  .name-header {
-    font-size: 40px;
-  }
-  #toggleMode {
-    font-size: 50px;
-  }
+}
+
+@media (height < 750px) {
   .icon {
     font-size: 50px;
   }
-  h1 {
-    font-size: 2.5rem;
+}
+
+@media (height < 650px) {
+  .icon {
+    font-size: 40px;
   }
-  .image-box {
-    height: 20%;
+  .text-box {
+    font-size: 25px;
   }
-  .location {
-    font-size: 15px;
+}
+@media (height < 550px) {
+  .icon {
+    font-size: 35px;
   }
-} */
+  .paragraph {
+    font-size: 20px;
+  }
+  .text-box {
+    font-size: 20px;
+  }
+}
