@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Header from '../components/Header'
 import Start from '../components/Start'
 import Education from '../components/Education'
@@ -17,7 +17,7 @@ const [theme, setTheme] = useState<'light' | 'dark'>('light')
   const toggleTheme = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
   }
-
+  
   return (
     <>
     <Header onToggleTheme={toggleTheme} theme={theme}/>
