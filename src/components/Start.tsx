@@ -42,7 +42,7 @@ const handleLocationEnd = () => {
 }
 
     return(
-      <div className="start-page-container">
+      <div id="home" className="start-page-container">
       <div className="text-container">
         <div className="text-box-title">
           <h1 className="textContent">
