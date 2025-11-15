@@ -6,7 +6,7 @@
   "homepage": "ashley.thiering.org",
   "scripts": {
     "start": "vite",
-    "build": "tsc -b && vite build && start",
+    "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
