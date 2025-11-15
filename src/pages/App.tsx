@@ -1,35 +1,34 @@
-import { useEffect, useState } from 'react'
-import Header from '../components/Header'
-import Start from '../components/Start'
-import Education from '../components/Education'
-import Skills from '../components/Skills'
-import Projects from '../components/Projects'
-
+import { useEffect, useState } from "react";
+import Header from "../components/Header";
+import Start from "../components/Start";
+import Education from "../components/Education";
+import Skills from "../components/Skills";
+import Projects from "../components/Projects";
 
 function App() {
-const [theme, setTheme] = useState<'light' | 'dark'>('light')
+  const [theme, setTheme] = useState<"light" | "dark">("light");
 
   useEffect(() => {
-    document.body.classList.remove('light', 'dark')
-    document.body.classList.add(theme)
-  }, [theme])
+    document.body.classList.remove("light", "dark");
+    document.body.classList.add(theme);
+  }, [theme]);
 
   const toggleTheme = () => {
-    setTheme(prev => (prev === 'light' ? 'dark' : 'light'))
-  }
-  
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
   return (
     <>
-    <Header onToggleTheme={toggleTheme} theme={theme}/>
-    <Start/>
-    <Education/>
-    <Skills/>
-    <Projects/>
-<footer>© 2025 Ashley Drewes. All rights reserved.</footer>        
-         </>
-  )
+      <Header onToggleTheme={toggleTheme} theme={theme} />
+      <Start />
+      <Education />
+      <Skills />
+      <Projects />
 
+      <footer>© 2025 Ashley Drewes. All rights reserved.</footer>
+    </>
+  );
 }
 
-export default App
+export default App;
 //TODO: filter out component that are used multiple times

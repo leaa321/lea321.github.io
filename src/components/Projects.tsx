@@ -1,13 +1,12 @@
-import '../style/projects.css'
+import "../style/projects.css";
 
-function Projects(){
-
-    return(
-        <div className="project-section">
-          <h1>Projects</h1>
-          <p>Still in progress...</p>
-        </div>
-    )
+function Projects() {
+  return (
+    <div className="project-section">
+      <h1>Projects</h1>
+      <p>Still in progress...</p>
+    </div>
+  );
 }
 
-export default Projects
+export default Projects;
