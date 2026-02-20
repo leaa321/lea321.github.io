@@ -31,4 +31,3 @@ function App() {
 }
 
 export default App;
-//TODO: filter out component that are used multiple times

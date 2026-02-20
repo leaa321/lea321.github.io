@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Funnel+Display:wght@300;400;500&display=swap");
 @import url(https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Pixelify+Sans&display=swap);
 
+html{
+  scroll-behavior: smooth;
+}
+
 body.light {
   --color-background: rgba(250, 235, 215, 1);
   --color-text: black;

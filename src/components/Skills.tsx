@@ -2,7 +2,6 @@ import { useEffect } from "react";
 import "../style/skills.css";
 import {
   IoLogoAngular,
-  IoLogoCss3,
   IoLogoHtml5,
   IoLogoJavascript,
   IoLogoReact,
@@ -15,11 +14,6 @@ function Skills() {
     name: "Angular",
     icon: <IoLogoAngular className="icon-skill" />,
     text: "I’m currently learning Angular and building a web app where you manage shared todos with a partner, including a points and rewards system.",
-  },
-  {
-    name: "Java",
-    icon: <IoLogoJavascript className="icon-skill" />,
-    text: "I’m learning Java in my apprenticeship and used it to build multiple backend applications.",
   },
   {
     name: "React",
@@ -36,6 +30,12 @@ function Skills() {
     icon: <IoLogoHtml5 className="icon-skill" />,
     text: "HTML is the core foundation of web development, so it’s always part of my workflow.",
   },
+  {
+    name: "Java",
+    icon: <i className="fa-brands fa-java"></i>,
+    //fontawesome
+    text: "I’m learning Java in my apprenticeship and used it to build multiple backend applications.",
+  }
 ];
   useEffect(() => {
     const icons = document.querySelectorAll(".skill-card");
