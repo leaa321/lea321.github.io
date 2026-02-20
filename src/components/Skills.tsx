@@ -3,7 +3,6 @@ import "../style/skills.css";
 import {
   IoLogoAngular,
   IoLogoHtml5,
-  IoLogoJavascript,
   IoLogoReact,
   IoLogoSass,
 } from "react-icons/io5";
