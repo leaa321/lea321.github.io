@@ -1,34 +1,44 @@
 import { useEffect } from "react";
 import "../style/skills.css";
 import {
+  IoLogoAngular,
   IoLogoCss3,
   IoLogoHtml5,
   IoLogoJavascript,
   IoLogoReact,
+  IoLogoSass,
 } from "react-icons/io5";
 
 function Skills() {
   const skills = [
-    {
-      name: "Java",
-      icon: <IoLogoJavascript className="icon-skill" />,
-    },
-    {
-      name: "CSS",
-      icon: <IoLogoCss3 className="icon-skill" />,
-    },
-    {
-      name: "React",
-      icon: <IoLogoReact className="icon-skill" />,
-    },
-    {
-      name: "HTML",
-      icon: <IoLogoHtml5 className="icon-skill" />,
-    },
-  ];
-
+  {
+    name: "Angular",
+    icon: <IoLogoAngular className="icon-skill" />,
+    text: "I’m currently learning Angular and building a web app where you manage shared todos with a partner, including a points and rewards system.",
+  },
+  {
+    name: "Java",
+    icon: <IoLogoJavascript className="icon-skill" />,
+    text: "I’m learning Java in my apprenticeship and used it to build multiple backend applications.",
+  },
+  {
+    name: "React",
+    icon: <IoLogoReact className="icon-skill" />,
+    text: "I built this website using React.",
+  },
+  {
+    name: "SCSS",
+    icon: <IoLogoSass className="icon-skill" />,
+    text: "I use SCSS for all my styling because it keeps my design clean and scalable, and I genuinely enjoy working with it.",
+  },
+  {
+    name: "HTML",
+    icon: <IoLogoHtml5 className="icon-skill" />,
+    text: "HTML is the core foundation of web development, so it’s always part of my workflow.",
+  },
+];
   useEffect(() => {
-    const icons = document.querySelectorAll(".icon-skill");
+    const icons = document.querySelectorAll(".skill-card");
     if (icons.length === 0 || !icons) return;
 
     const observer = new IntersectionObserver(
@@ -54,15 +64,22 @@ function Skills() {
     <div className="skill-section">
       <h1>Skills</h1>
       <div className="skill-container">
-        <ul className="skill-list">
           {skills.map((skill) => (
-            <li key={skill.name} id={`skill-${skill.name}`}>
-              {skill.icon}
-            </li>
+            <div className="skill-card">
+              <div className="face face1">
+                <div className="content">
+                  <p>{skill.text}</p>
+            </div>
+            </div>
+
+            <div className="face face2" >
+              <h2 className="icon-skill">{skill.icon}</h2>
+            </div>
+            </div>
           ))}
-        </ul>
       </div>
     </div>
+
   );
 }
 

@@ -11,6 +11,7 @@ body.light {
   --secondary-color: #d4689e;
   --color-muted: black;
   --color-blur: rgba(219, 29, 175, 0.048);
+  --color-card: rgba(213,203,181);
 }
 
 body.dark {
@@ -23,6 +24,7 @@ body.dark {
   --secondary-color: #cd4b97;
   --color-muted: rgb(155, 150, 150);
   --color-blur: rgba(185, 190, 193, 0.08);
+  --color-card: rgba(97,64,84);
 }
 
 body {

@@ -25,7 +25,7 @@ function App() {
       <Skills />
       <Projects />
 
-      <footer>© 2025 Ashley Drewes. All rights reserved.</footer>
+      <footer>© 2026 Ashley Drewes. All rights reserved.</footer>
     </>
   );
 }
