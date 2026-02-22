@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Funnel+Display:wght@300;400;500&display=swap");
 @import url(https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Pixelify+Sans&display=swap);
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -15,7 +15,7 @@ body.light {
   --secondary-color: #d4689e;
   --color-muted: black;
   --color-blur: rgba(219, 29, 175, 0.048);
-  --color-card: rgba(213,203,181);
+  --color-card: rgba(213, 203, 181);
 }
 
 body.dark {
@@ -27,15 +27,18 @@ body.dark {
   --primary-color: #d34ea2;
   --secondary-color: #cd4b97;
   --color-muted: rgb(155, 150, 150);
-  --color-blur: rgba(185, 190, 193, 0.08);
-  --color-card: rgba(97,64,84);
+  --color-blur: #b9bec114;
+  --color-card: #614054;
 }
 
 body {
   margin: 0;
-  transition: background-color 1s ease, color 1s ease;
+  transition:
+    background-color 1s ease,
+    color 1s ease;
   padding-top: 80px;
-  background: radial-gradient(
+  background:
+    radial-gradient(
       circle at -10% 0%,
       var(--gradient-color-1),
       transparent 50%

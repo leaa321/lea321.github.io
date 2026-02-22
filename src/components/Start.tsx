@@ -1,17 +1,21 @@
 import "../style/start.css";
-import AshPic from "../assets/Image.png";
+import AshPic from "../assets/2.png";
 import {
   IoLocationOutline,
   IoLogoGithub,
   IoLogoLinkedin,
   IoMailOutline,
 } from "react-icons/io5";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 function Start() {
   const handRef = useRef<HTMLSpanElement>(null);
   const locRef = useRef<HTMLAnchorElement>(null);
   const isAnimatingRef = useRef(false);
+
+  useEffect(() => {
+    handleHover();
+  }, []);
 
   const handleHover = () => {
     const element = handRef.current;
@@ -81,7 +85,6 @@ function Start() {
         <div className="image-border"></div>
         <img src={AshPic} alt="image of ashley" className="ash-pic" />
         <div className="image-box">
-          <p className="paragraph">Contact</p>
           <ul className="icon-list">
             <li>
               <a href="mailto:lea.maria.drewes@gmail.com">

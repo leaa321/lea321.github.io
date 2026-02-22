@@ -1,9 +1,9 @@
 //TODO Projects section
-    - or new site where u have an overview of the project and cards with grid with little pic and short description
-    - add  not found site
+// - or new site where u have an overview of the project and cards with grid with little pic and short description
+// - add not found site
+// - add hover effect for pics
+// - when going back go to id of element where u clicked on project
 
-//TODO
-    - add diff pic
-    - add to linkedin
-    - fix little overflow of icon in skill section for hover    
-    - add java icon
+//TODO  - add to linkedin
+//TODO - fit border radius to timeline
+//TODO - add diff font for start hey
