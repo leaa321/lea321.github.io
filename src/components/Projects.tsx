@@ -1,4 +1,4 @@
-import "../style/projects.css";
+import "../style/projects.scss";
 import { IoIosArrowForward } from "react-icons/io";
 import logo from "../assets/querformatladen.png";
 import partyGame from "../assets/projects/party-landingpage-short.png"

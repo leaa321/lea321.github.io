@@ -1,0 +1,161 @@
+.education-section {
+  .timeline {
+    margin: 20px auto;
+    padding: 20px;
+    justify-content: center;
+    display: flex;
+
+    .outer {
+      .card {
+        position: relative;
+        max-width: 400px;
+        opacity: 0;
+        transform: translateY(40px);
+        transition: all 0.6s ease-out;
+
+        &.show {
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        &:nth-child(odd) {
+          padding: 30px 0 30px 30px;
+
+          .info {
+            .title {
+              &::before {
+                left: -45px;
+              }
+            }
+          }
+        }
+
+        &:nth-child(even) {
+          padding: 30px 30px 30px 0;
+
+          .info {
+
+            .title {
+              text-align: right;
+
+              &::before {
+                right: -45px;
+              }
+            }
+          }
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 50%;
+          border: solid var(--primary-color);
+        }
+
+        &:nth-child(odd)::before {
+          left: 0px;
+          top: -5px;
+          bottom: -4.5px;
+          border-width: 5px 0 5px 5px;
+          border-radius: 50px 0 0 50px;
+        }
+
+        &:nth-child(even)::before {
+          right: 0;
+          top: 0;
+          bottom: 0.5px;
+          border-width: 5px 5px 5px 0;
+          border-radius: 0 50px 50px 0;
+        }
+
+        &:first-child::before {
+          border-top: 0;
+          border-top-left-radius: 0;
+        }
+
+        &:last-child:nth-child(odd)::before {
+          border-bottom: 0;
+          border-bottom-left-radius: 0;
+        }
+
+        &:last-child:nth-child(even)::before {
+          border-bottom: 0;
+          border-bottom-right-radius: 0;
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          background: var(--color-blur);
+          color: var(--color-text);
+          border-radius: 30px;
+          padding: 10px;
+          font-family: "Funnel Display", sans-serif;
+
+          p {
+            margin: 5px 0 0 0;
+            padding: 5px;
+            color: var(--color-muted);
+            font-weight: normal;
+          }
+
+          .title {
+            color: var(--secondary-color);
+            position: relative;
+            font-family: "Bagel Fat One";
+            margin-bottom: 2px;
+
+            &::before {
+              content: "";
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              background: white;
+              border-radius: 999px;
+              border: 3px solid var(--primary-color);
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@media (width >=700px) {
+  .education-section {
+    .outer {
+      .card {
+        .info {
+          h3 {
+            font-size: var(--text-size-large);
+          }
+
+          p {
+            font-size: var(--text-size-medium);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .education-section {
+    .outer {
+      .card {
+        &:nth-child(odd) {
+          &::before {
+            top: -5px;
+          }
+        }
+
+        &:nth-child(even) {
+          &::before {
+            bottom: 0.1px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "../style/education.css";
+import "../style/education.scss";
 
 function Education() {
   useEffect(() => {

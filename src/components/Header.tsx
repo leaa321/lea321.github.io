@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../style/header.css";
+import "../style/header.scss";
 import ThemeSwitch from "./ThemeSwitch";
 
 function Header() {

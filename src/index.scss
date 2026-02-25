@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Funnel+Display:wght@300;400;500&display=swap");
 @import url(https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Pixelify+Sans&display=swap);
 
-:root{
---text-size-small: 0.8rem;
+:root {
+  --text-size-small: 0.8rem;
   --text-size-medium-small: 0.9rem;
   --text-size-medium: 1.1rem;
   --text-size-large: 2rem;
@@ -26,7 +26,7 @@ body.light {
   --gradient-color-3: #b0cf97;
   --primary-color: rgb(223, 135, 196);
   --secondary-color: #d4689e;
-  --accent-color:  #7a0b43;
+  --accent-color: #7a0b43;
   --color-muted: black;
   --color-blur: rgba(219, 29, 175, 0.048);
   --color-card: rgba(213, 203, 181);
@@ -40,7 +40,7 @@ body.dark {
   --gradient-color-3: #792359;
   --primary-color: #d34ea2;
   --secondary-color: #cd4b97;
-  --accent-color:  #e673ac;
+  --accent-color: #e673ac;
   --color-muted: rgb(155, 150, 150);
   --color-blur: #b9bec114;
   --color-card: #614054;
@@ -53,21 +53,15 @@ body {
     color 1s ease;
   padding-top: 80px;
   background:
-    radial-gradient(
-      circle at -10% 0%,
+    radial-gradient(circle at -10% 0%,
       var(--gradient-color-1),
-      transparent 50%
-    ),
-    radial-gradient(
-      circle at 130% 50%,
+      transparent 50%),
+    radial-gradient(circle at 130% 50%,
       var(--gradient-color-2),
-      transparent 60%
-    ),
-    radial-gradient(
-      circle at -100% 100%,
+      transparent 60%),
+    radial-gradient(circle at -100% 100%,
       var(--gradient-color-3),
-      transparent 100%
-    );
+      transparent 100%);
   background-color: var(--color-background);
   color: var(--color-text);
 }
@@ -90,42 +84,43 @@ footer {
   color: var(--color-muted);
 }
 
-@media (width >= 1000px) {
-  body{
-  --text-size-small: 1rem;
-  --text-size-medium-small: 1.2rem;
-  --text-size-medium: 1.5rem;
-  --text-size-large: 2rem;
-  --text-size-larger: 2.9rem;
-  --icon-size-larger: 6rem;
-  --icon-size-large: 2.5rem;
-  --icon-size-medium: 3.5rem;
-  --icon-size-small: 1.2rem;
-  }
-}
-
-@media(width > 1500px){
-  body{
-  --icon-size-medium: 4rem;
-  }
-}
-
-@media(width > 1700px){
-  body{
-  --icon-size-medium: 5rem;
-  }
-}
-
-@media (max-height : 750px) {
+@media (width >=1000px) {
   body {
-    --icon-size-medium : 3rem;
+    --text-size-small: 1rem;
+    --text-size-medium-small: 1.2rem;
+    --text-size-medium: 1.5rem;
+    --text-size-large: 2rem;
+    --text-size-larger: 2.9rem;
+    --icon-size-larger: 6rem;
+    --icon-size-large: 2.5rem;
+    --icon-size-medium: 3.5rem;
+    --icon-size-small: 1.2rem;
+  }
+}
+
+@media(width > 1500px) {
+  body {
+    --icon-size-medium: 4rem;
+  }
+}
+
+@media(width > 1700px) {
+  body {
+    --icon-size-medium: 5rem;
+  }
+}
+
+@media (max-height : 750px),
+(max-width: 750px) {
+  body {
+    --icon-size-medium: 3rem;
   }
 }
 
 @media (max-height : 650px) {
   body {
-    --icon-size-medium : 2.9rem;
-  --text-size-medium: 1.45rem;
+    --icon-size-medium: 2.9rem;
+    --text-size-medium: 1.45rem;
   }
 }
 

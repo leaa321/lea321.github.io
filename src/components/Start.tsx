@@ -1,4 +1,4 @@
-import "../style/start.css";
+import "../style/start.scss";
 import AshPic from "../assets/2.png";
 import {
   IoLocationOutline,

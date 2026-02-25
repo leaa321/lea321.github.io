@@ -1,4 +1,4 @@
-import "../../style/projects/partyPage.css"
+import "../../style/projects/partyPage.scss"
 import partyLandingPage from "../../assets/projects/party-landingpage.png"
 import partyGamePage from "../../assets/projects/party-gamepage.png"
 import partyAdminPageOne from "../../assets/projects/party-adminsitepageOne.png"

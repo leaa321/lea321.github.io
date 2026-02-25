@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import "../style/skills.css";
+import "../style/skills.scss";
 import { ICONS_BY_KEY } from "./Icon";
 
 function Skills() {

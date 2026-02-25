@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import { IoArrowBackOutline as BackArrow } from "react-icons/io5";
 import { Link, Outlet } from "react-router-dom";
-import "../style/projectLayout.css";
+import "../style/projectLayout.scss";
 
 export function ProjectLayout() {
   return (
