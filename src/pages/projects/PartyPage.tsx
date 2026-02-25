@@ -10,16 +10,16 @@ import { IoConstructOutline, IoImageOutline, IoPeopleOutline, IoSettingsOutline,
 import TechStack from "../../components/TechStack"
 
 export function PartyPage() {
-const techKeys : string[] = ["react", "scss","nodejs"] as const;
+  const techKeys: string[] = ["react", "scss", "nodejs"] as const;
 
-  return ( 
-  <div className="party-page">
+  return (
+    <div className="party-page">
       <div className="title-section">
-    <h2 className="project-title">
-      <IoSparklesOutline className="project-title-icon"/>
-      Custom Party App</h2>
-    <p className="description">A custom party app we built for my fathers 49th birthday.</p>
-    </div>
+        <h2 className="project-title">
+          <IoSparklesOutline className="project-title-icon" />
+          Custom Party App</h2>
+        <p className="description">A custom party app we built for my fathers 49th birthday.</p>
+      </div>
       <div className="project-image-section">
         <img className="project-image-item" src={partyGamePage} alt="party game page" />
         <img className="project-image-item" src={partyLandingPage} alt="party game page" />
@@ -32,65 +32,66 @@ const techKeys : string[] = ["react", "scss","nodejs"] as const;
           This app was designed for one event: guests open a single link and get access to interactive activities. The goal was to make the party feel personal and playful, and to get everyone involved. <br /> <br /> Also because everybody got a "random" partner, it encouraged people to talk to others they did not know well.
         </p>
       </div>
-       <div className=" project-page-card">
+      <div className=" project-page-card">
         <h2 className="project-card-title">
           What it features
         </h2>
         <ul className="feature-list">
           <li className="feature-item">
-            <IoConstructOutline className="feature-icon"/>
+            <IoConstructOutline className="feature-icon" />
             <span className="feature-item-text">
-Built in admin tool, where you can manage teams, games and gamestates.           </span>
+              Built in admin tool, where you can manage teams, games and gamestates.           </span>
           </li>
           <li className="feature-item">
-            <IoPeopleOutline className="feature-icon"/>
-           <span className="feature-item-text">
-            Guests solve clues and match with their assigned partner for the next activity.
-           </span>
+            <IoPeopleOutline className="feature-icon" />
+            <span className="feature-item-text">
+              Guests solve clues and match with their assigned partner for the next activity.
+            </span>
           </li>
           <li className="feature-item">
-            <IoImageOutline className="feature-icon"/>
+            <IoImageOutline className="feature-icon" />
             <span className="feature-item-text">
-Everyone can upload and browse party photos in one place.             </span>
+              Everyone can upload and browse party photos in one place.             </span>
           </li>
         </ul>
       </div>
-        <div className="project-card-tech">
+      <div className="project-card-tech">
         <TechStack techKeys={techKeys} ></TechStack>
       </div>
       <div className="project-page-card ">
-          <h2 className="project-card-title">
-            <IoSettingsOutline className="project-card-title-icon"/>
-            Admin tool
-          </h2>
-          <div className="project-image-section">
-
+        <h2 className="project-card-title">
+          <IoSettingsOutline className="project-card-title-icon" />
+          Admin tool
+        </h2>
+        <div className="project-image-section">
           <img src={partyAdminPageOne} alt="party admin page" className="project-image-item" />
           <img src={partyAdminPageTwo} alt="party admin page" className="project-image-item" />
-
-          </div>
-          <p className="card-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nam optio ullam numquam, assumenda quos amet culpa vel quo facilis aspernatur? Odit, assumenda enim. Maiores dicta quos blanditiis quasi excepturi.
-          </p>
-
         </div>
-        <div className="project-page-card ">
-          <h2 className="project-card-title">
-            <IoShareSocialOutline className="project-card-title-icon"/>
-            Sharing tool
-          </h2>
-          <div className="project-image-section">
+        <p className="card-description">
+          The app includes a password-protected admin dashboard for full game management.
+          Admins can create and manage groups and players, edit individual attributes, and access each player’s QR code.
+          <br /><br />
+          A central control panel allows starting games, selecting active questions, and importing or exporting the full game state as JSON.
+        </p>
+
+      </div>
+      <div className="project-page-card ">
+        <h2 className="project-card-title">
+          <IoShareSocialOutline className="project-card-title-icon" />
+          Sharing tool
+        </h2>
+        <div className="project-image-section">
 
           <img src={partyQuestionsPage} alt="party admin page" className="project-image-item" />
           <img src={partyGalleryPage} alt="party admin page" className="project-image-item" />
 
-          </div>
-          <p className="card-description">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi nam optio ullam numquam, assumenda quos amet culpa vel quo facilis aspernatur? Odit, assumenda enim. Maiores dicta quos blanditiis quasi excepturi.
-          </p>
-
         </div>
-  </div>);
+        <p className="card-description">
+          A shared gallery allows all guests to upload and download photos.
+          A separate sharing view collects answers to fun questions, displaying each submission together with the group it came from, visible to everyone in real time.
+        </p>
+      </div>
+    </div>);
 }
 
 // for tech stack add tech stack component
