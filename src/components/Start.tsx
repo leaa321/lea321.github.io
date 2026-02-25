@@ -54,7 +54,7 @@ function Start() {
       <div className="text-container">
         <div className="text-box-title">
           <h1 className="textContent">
-            Hi I'm Ashley!{" "}
+            Hi I'm <span className="name">Ashley!</span>{" "}
             <span
               className="handToggle"
               ref={handRef}

@@ -48,7 +48,7 @@
           z-index: 1;
 
           .content {
-            font-size: var(--text-size-small);
+            font-size: var(--text-size-medium-small);
             margin: 0;
             padding: 0 0 1rem 0;
             font-family: "Funnel Display";
@@ -121,7 +121,7 @@
   }
 }
 
-@media (width >=1000px) {
+@media (width >=500px) {
   .skill-section {
     .skill-container {
       .skill-card {

@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Funnel+Display:wght@300;400;500&display=swap");
 @import url(https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Pixelify+Sans&display=swap);
+@import url("https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap");
 
 :root {
   --text-size-small: 0.8rem;
@@ -68,8 +69,8 @@ body {
 
 h1 {
   text-align: center;
-  font-family: "Bagel Fat One";
-  font-weight: 1;
+  font-family: "Sour Gummy", sans-serif;
+  font-weight: bold;
   padding-top: 70px;
   font-size: var(--text-size-larger);
 }
