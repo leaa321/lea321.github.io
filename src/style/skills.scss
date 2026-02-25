@@ -139,17 +139,28 @@
   }
 }
 
-@media (hover: hover) and (pointer: fine) and (width >=600px) {
+@media (hover: hover) and (pointer: fine) and (width >=700px) {
   .skill-section {
     .skill-container {
       .skill-card {
         &:hover {
-          .face.face2 {
-            height: 60px;
-          }
+          .face {
 
-          .icon-skill {
-            font-size: clamp(30px, 10vw, 50px);
+            &.face1 {
+              display: flex;
+              padding: 20px;
+            }
+
+            &.face2 {
+              height: 20%;
+              overflow: hidden;
+
+              h2 {
+                .icon-skill {
+                  font-size: clamp(40px, 10vw, 50px);
+                }
+              }
+            }
           }
         }
       }
@@ -162,8 +173,10 @@
     .skill-container {
       .skill-card {
         &:hover {
-          .face.face2 {
-            height: 100%;
+          .face {
+            &.face2 {
+              height: 100%;
+            }
           }
         }
       }
