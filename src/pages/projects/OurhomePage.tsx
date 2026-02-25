@@ -2,7 +2,7 @@ import ourHomeRewardPage from "../../assets/projects/ourhome-rewardpage.png";
 import ourHomeTaskPage from "../../assets/projects/ourhome-taskpage.png";
 import ourHomeSettingsPage from "../../assets/projects/ourhome-settingspage.png";
 import ourHomeTaskSettingsPage from "../../assets/projects/ourhome-settingspageTasks.png";
-import { IoCheckboxOutline, IoFilterOutline, IoGiftOutline, IoServerOutline, IoSettingsOutline, IoShareSocialOutline, IoStarOutline, IoTimeOutline } from "react-icons/io5";
+import { IoCheckboxOutline, IoFilterOutline, IoGiftOutline, IoServerOutline, IoSettingsOutline, IoStarOutline, IoTimeOutline } from "react-icons/io5";
 import TechStack from "../../components/TechStack";
 
 export function OurHomePage() {
