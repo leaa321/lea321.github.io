@@ -1,49 +1,27 @@
 import "../style/projects.css";
-import { IoIosArrowForward, IoLogoAngular } from "react-icons/io";
+import { IoIosArrowForward } from "react-icons/io";
 import logo from "../assets/querformatladen.png";
-import { IoLogoHtml5, IoLogoReact, IoLogoSass } from "react-icons/io5";
-import { FaJava } from "react-icons/fa";
+import partyGame from "../assets/projects/party-landingpage-short.png"
+import { Link } from "react-router-dom";
+import { ICONS_BY_KEY } from "./Icon";
 
 function Projects() {
-  const tags = [
-    {
-      name: "Angular",
-      icon: <IoLogoAngular className="tag" />,
-    },
-    {
-      name: "React",
-      icon: <IoLogoReact className="tag" />,
-    },
-    {
-      name: "SCSS",
-      icon: <IoLogoSass className="tag" />,
-    },
-    {
-      name: "HTML",
-      icon: <IoLogoHtml5 className="tag" />,
-    },
-    {
-      name: "Java",
-      icon: <FaJava className="tag" />,
-    },
-  ];
-
   const projects = [
     {
-      name: "Project 1",
+      name: "Party app",
       description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "A custom party app we built for my fathers 49th birthday.",
       link: "/projects/partyApp",
-      imageLink: logo,
-      tags: [tags[0].name, tags[2].name],
+      imageLink: partyGame,
+      tags: ["react","scss"],
     },
     {
-      name: "Project 2",
+      name: "Househould app",
       description:
         "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      link: "",
+      link: "/projects/ourHome",
       imageLink: logo,
-      tags: [tags[0].name, tags[2].name],
+      tags: ["react","scss"],
     },
   ];
 
@@ -57,16 +35,25 @@ function Projects() {
               <h2>{project.name}</h2>
               <p>{project.description}</p>
             </div>
+            <div className="project-card-media">
             <img src={project.imageLink} alt={project.name} />
+            </div>
             <div className="bottom-section">
               <div className="tag-section">
-                {project.tags.map((tag) => (
-                  <div>{tags.find((t) => t.name === tag)?.icon}</div>
-                ))}
+                {project.tags.map((tag)=> {
+                  const def = ICONS_BY_KEY[tag];
+                  if(!def) return null;
+
+                  const Icon = def.icon;
+                  return(
+                    <Icon className="tag"/>
+                  )
+                })}
+                
               </div>
-              <a className="button" href={project.link}>
-                View Project <IoIosArrowForward />
-              </a>
+              <Link className="button" to={project.link}>
+              View Project <IoIosArrowForward />
+                </Link>
             </div>
           </div>
         ))}

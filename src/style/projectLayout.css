@@ -7,7 +7,7 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .project-back-link {
@@ -18,9 +18,10 @@
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-top: 20px;
+  transition: 0.1s ease-in;
 }
 
 .project-back-link:hover {
   transform: scale(1.05);
+  /* TODO: move arrow to left while hover */
 }
