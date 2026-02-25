@@ -104,6 +104,18 @@ footer {
   }
 }
 
+@media(width > 1500px){
+  body{
+  --icon-size-medium: 4rem;
+  }
+}
+
+@media(width > 1700px){
+  body{
+  --icon-size-medium: 5rem;
+  }
+}
+
 @media (max-height : 750px) {
   body {
     --icon-size-medium : 3rem;

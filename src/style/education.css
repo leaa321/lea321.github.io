@@ -35,7 +35,7 @@
 .card:nth-child(even)::before {
   right: 0;
   top: 0;
-  bottom: 0;
+  bottom: 0.5px;
   border-width: 5px 5px 5px 0;
   border-radius: 0 50px 50px 0;
 }
@@ -124,6 +124,9 @@
 @media only screen and (max-width: 400px) {
   .card:nth-child(odd)::before {
     top: -5px;
-    bottom: -5px;
   }
+
+  .card:nth-child(even)::before {
+  bottom: 0.1px;
+}
 }

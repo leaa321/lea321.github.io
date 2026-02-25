@@ -216,13 +216,3 @@
     height: 20%;
   }
 }
-
-
-/* @media (height < 550px) {
-  .icon {
-    --icon-size-medium : 2.5rem;
-  }
-  .text-box {
-  --text-size-medium: 1.25rem;
-  }
-} */
