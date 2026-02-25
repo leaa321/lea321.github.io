@@ -1,7 +1,7 @@
 import "../style/projects.scss";
 import { IoIosArrowForward } from "react-icons/io";
-import logo from "../assets/querformatladen.png";
 import partyGame from "../assets/projects/party-landingpage-short.png"
+import ourHome from "../assets/projects/ourhome-rewardpageShort.png";
 import { Link } from "react-router-dom";
 import { ICONS_BY_KEY } from "./Icon";
 
@@ -13,15 +13,15 @@ function Projects() {
         "A custom party app we built for my fathers 49th birthday.",
       link: "/projects/partyApp",
       imageLink: partyGame,
-      tags: ["react", "scss"],
+      tags: ["react", "scss", "nodejs"],
     },
     {
       name: "Househould app",
       description:
-        "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "I’m currently working on an Angular app where two partners manage shared tasks and individually earn points to unlock their own rewards.",
       link: "/projects/ourHome",
-      imageLink: logo,
-      tags: ["react", "scss"],
+      imageLink: ourHome,
+      tags: ["angular", "scss", "springboot", "firebase"],
     },
   ];
 
