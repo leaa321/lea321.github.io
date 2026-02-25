@@ -48,7 +48,7 @@
 
 .project-text-section {
   text-align: center;
-  font-size: 1rem;
+  font-size: var(--text-size-medium);
 }
 
 .project-section p {
@@ -67,7 +67,7 @@
   padding: 10px 10px;
     border-radius: var(--border-radius);
   cursor: pointer;
-  font-size: 0.7rem;
+  font-size: var(--text-size-small);
   align-items: center;
   display: flex;
   gap: 5px;
@@ -90,7 +90,7 @@
   padding: 2px 20px;
   border: 1px solid var(--color-text);
   border-radius: 99px;
-  font-size: 0.9rem;
+  font-size: var(--icon-size-small);
   gap: 5px;
 }
 
@@ -114,15 +114,10 @@
   }
 
   .button {
-    font-size: 1rem;
     padding: 10px 20px;
   }
 
-  .tag {
-    font-size: 1.1rem;
-  }
-
   .project-text-section {
-    font-size: 1.2rem;
+    font-size: var(--text-size-medium-small);
   }
 }

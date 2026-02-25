@@ -1,6 +1,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Funnel+Display:wght@300;400;500&display=swap");
 @import url(https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&family=Pixelify+Sans&display=swap);
 
+:root{
+--text-size-small: 0.8rem;
+  --text-size-medium-small: 0.9rem;
+  --text-size-medium: 1.1rem;
+  --text-size-large: 2rem;
+  --text-size-larger: 2.1rem;
+  --icon-size-larger: 3rem;
+  --icon-size-large: 2rem;
+  --icon-size-medium: 1.5rem;
+  --icon-size-small: 1rem;
+  --border-radius: 15px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -57,13 +70,6 @@ body {
     );
   background-color: var(--color-background);
   color: var(--color-text);
-
-  --text-size-small: 0px;
-  --text-size-medium-small: 0px;
-  --text-size-medium: 0px;
-  --text-size-large: 0px;
-  --text-size-larger: 0px;
-  --border-radius: 15px;
 }
 
 h1 {
@@ -71,16 +77,10 @@ h1 {
   font-family: "Bagel Fat One";
   font-weight: 1;
   padding-top: 70px;
-  font-size: 35px;
+  font-size: var(--text-size-larger);
 }
 
-#toggleMode {
-  font-size: 30px;
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: inherit;
-}
+
 
 footer {
   text-align: center;
@@ -91,7 +91,42 @@ footer {
 }
 
 @media (width >= 1000px) {
-  h1 {
-    font-size: 3rem;
+  body{
+  --text-size-small: 1rem;
+  --text-size-medium-small: 1.2rem;
+  --text-size-medium: 1.5rem;
+  --text-size-large: 2rem;
+  --text-size-larger: 2.9rem;
+  --icon-size-larger: 6rem;
+  --icon-size-large: 2.5rem;
+  --icon-size-medium: 3.5rem;
+  --icon-size-small: 1.2rem;
+  }
+}
+
+@media (max-height : 750px) {
+  body {
+    --icon-size-medium : 3rem;
+  }
+}
+
+@media (max-height : 650px) {
+  body {
+    --icon-size-medium : 2.9rem;
+  --text-size-medium: 1.45rem;
+  }
+}
+
+@media (max-height: 550px) {
+  body {
+    --icon-size-medium: 2.5rem;
+    --text-size-medium: 1.25rem;
+  }
+}
+
+@media (max-height: 400px) {
+  body {
+    --icon-size-medium: 2rem;
+    --text-size-medium: 1.2rem;
   }
 }

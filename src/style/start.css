@@ -4,6 +4,7 @@
   cursor: pointer;
   background-color: transparent;
   transition: transform 0.3s ease;
+  font-size: var(--icon-size-medium);
 }
 
 .icon:hover {
@@ -76,15 +77,6 @@
   display: flex;
 }
 
-.paragraph {
-  font-family: "Bagel Fat One";
-  font-size: 25px;
-  left: 50%;
-  text-align: center;
-  margin-top: 5px;
-  color: var(--primary-color);
-}
-
 .icon-list {
   list-style: none;
   flex-direction: row;
@@ -98,7 +90,7 @@
 
 .icon {
   color: var(--primary-color);
-  font-size: 45px;
+  font-size: var(--icon-size-medium);
   transition: transform 0.3s ease;
 }
 
@@ -108,7 +100,6 @@
 
 .text-box-title {
   font-family: "Bagel Fat One";
-  font-size: 30px;
   color: var(--color-text);
   display: flex;
   flex-direction: column;
@@ -126,7 +117,7 @@
 .text-box {
   align-items: center;
   font-family: "Funnel Display", sans-serif;
-  font-size: larger;
+  font-size: var(--text-size-medium);
   border-radius: 6px;
   padding: 1rem;
   backdrop-filter: blur(100px);
@@ -141,7 +132,7 @@
 .location {
   color: var(--color-muted);
   font-family: "Funnel Display", sans-serif;
-  font-size: medium;
+  font-size: var(--icon-size-small);
   width: 100%;
   max-width: 400px;
   text-align: left;
@@ -149,6 +140,9 @@
   text-decoration: none;
   position: relative;
   display: inline-block;
+  gap: 5px;
+  align-items: center;
+  display: flex;
 }
 
 .location::after {
@@ -201,7 +195,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  padding-top: 3rem;
+  padding-top: 1rem;
   gap: 10px;
 }
 
@@ -213,61 +207,22 @@
     margin: auto;
   }
   .text-box-title h1 {
-    font-size: 3 rem;
     font-weight: lighter;
-  }
-  .text-box {
-    font-size: 30px;
   }
   .image-container {
     height: 70%;
   }
-  .name-header {
-    font-size: 40px;
-  }
-  #toggleMode {
-    font-size: 50px;
-  }
-  .icon {
-    font-size: 70px;
-  }
-
   .image-box {
     height: 20%;
   }
-  .location {
-    font-size: 22px;
-  }
 }
 
-@media (height < 850px) {
-  .icon {
-    font-size: 60px;
-  }
-}
 
-@media (height < 750px) {
+/* @media (height < 550px) {
   .icon {
-    font-size: 50px;
-  }
-}
-
-@media (height < 650px) {
-  .icon {
-    font-size: 40px;
+    --icon-size-medium : 2.5rem;
   }
   .text-box {
-    font-size: 25px;
+  --text-size-medium: 1.25rem;
   }
-}
-@media (height < 550px) {
-  .icon {
-    font-size: 35px;
-  }
-  .paragraph {
-    font-size: 20px;
-  }
-  .text-box {
-    font-size: 20px;
-  }
-}
+} */

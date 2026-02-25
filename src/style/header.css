@@ -32,3 +32,11 @@ header {
 .icon:hover {
   transform: scale(1.2);
 }
+
+#toggleMode {
+  font-size: var(--icon-size-large);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+}

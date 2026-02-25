@@ -53,7 +53,7 @@
 }
 
 .skill-card .face.face1 .content {
-  font-size: 1rem;
+  font-size: var(--text-size-small);
   margin: 0;
   padding: 0 0 1rem 0;
   font-family: "Funnel Display";
@@ -90,7 +90,7 @@
 }
 
 .icon-skill {
-  font-size: 64px;
+  font-size: var(--icon-size-medium);
   color: var(--secondary-color);
   transition: all 0.6s ease-out;
   display: flex;
@@ -116,20 +116,11 @@
     display: flex;
     padding: 20px;
   }
-
-  .skill-card .face.face2::before {
-    border-radius: var(--border-radius);
-
-  }
-
-  .icon-skill {
-    font-size: 80px;
-  }
 }
 
 @media (width >= 1000px) {
   .icon-skill {
-    font-size: 120px;
+    font-size: var(--icon-size-larger);
   }
 }
 
@@ -146,9 +137,5 @@
 @media (hover: none) {
   .skill-card:hover .face.face2 {
     height: 100%;
-  }
-
-  .skill-card:hover .icon-skill {
-    font-size: 64px;
   }
 }

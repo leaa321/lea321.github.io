@@ -16,7 +16,7 @@
     display: flex;
     gap: 5px;
     align-items: center;
-    font-size: 2rem;
+    font-size: var(--text-size-large);
     margin-bottom: 10px;
 }
 
@@ -84,9 +84,15 @@
 
 .feature-icon{
     color: var(--accent-color);
-    font-size: 3rem;
+    font-size: var(--icon-size-larger);
 }
 
 .feature-item-text{
-    font-size: 0.8rem;
+    font-size: var(--text-size-medium-small);
+}
+
+@media (width >= 1000px) {
+    .feature-icon{
+        font-size: var(--icon-size-large);
+    }
 }

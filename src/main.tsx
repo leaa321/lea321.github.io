@@ -1,6 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import "./index.css";
+import "./index.scss";
 import { MyRouter } from "./pages/MyRouter";
 
 createRoot(document.getElementById("root")!).render(

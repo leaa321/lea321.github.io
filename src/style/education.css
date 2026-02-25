@@ -102,6 +102,7 @@
 
 .outer p {
   margin: 5px 0 0 0;
+  padding: 5px;
   color: var(--color-muted);
   font-weight: normal;
 }
@@ -113,10 +114,10 @@
 
 @media (width >= 700px) {
   .outer h3 {
-    font-size: 35px;
+    font-size: var(--text-size-large);
   }
   .outer p {
-    font-size: 30px;
+    font-size: var(--text-size-medium);
   }
 }
 
