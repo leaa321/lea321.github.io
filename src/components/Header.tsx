@@ -1,20 +1,15 @@
+import { Link } from "react-router-dom";
 import "../style/header.css";
-import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+import ThemeSwitch from "./ThemeSwitch";
 
-type HeaderProps = {
-  onToggleTheme: () => void;
-  theme: "light" | "dark";
-};
-
-function Header({ onToggleTheme, theme }: HeaderProps) {
+function Header() {
+ 
   return (
     <header>
-      <a className="name-header" href="#home">
+      <Link className="name-header" to="/" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}>
         ASHLEY
-      </a>
-      <button className="icon darkmode" id="toggleMode" onClick={onToggleTheme}>
-        {theme === "light" ? <IoMoonOutline /> : <IoSunnyOutline />}
-      </button>
+      </Link>
+      <ThemeSwitch/>
     </header>
   );
 }
