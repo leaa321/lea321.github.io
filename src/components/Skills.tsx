@@ -1,38 +1,27 @@
 import { useEffect } from "react";
 import "../style/skills.css";
-import { FaJava } from "react-icons/fa";
-import {
-  IoLogoAngular,
-  IoLogoHtml5,
-  IoLogoReact,
-  IoLogoSass,
-} from "react-icons/io5";
+import { ICONS_BY_KEY } from "./Icon";
 
 function Skills() {
   const skills = [
     {
-      name: "Angular",
-      icon: <IoLogoAngular className="icon-skill" />,
+      name: "angular",
       text: "I’m currently learning Angular and building a web app where you manage shared todos with a partner, including a points and rewards system.",
     },
     {
-      name: "React",
-      icon: <IoLogoReact className="icon-skill" />,
+      name: "react",
       text: "I built this website using React.",
     },
     {
-      name: "SCSS",
-      icon: <IoLogoSass className="icon-skill" />,
+      name: "scss",
       text: "I use SCSS for all my styling because it keeps my design clean and scalable, and I genuinely enjoy working with it.",
     },
     {
-      name: "HTML",
-      icon: <IoLogoHtml5 className="icon-skill" />,
+      name: "html",
       text: "HTML is the core foundation of web development, so it’s always part of my workflow.",
     },
     {
-      name: "Java",
-      icon: <FaJava className="icon-skill" />,
+      name: "java",
       text: "I’m learning Java in my apprenticeship and used it to build multiple backend applications.",
     },
   ];
@@ -59,23 +48,29 @@ function Skills() {
     });
   });
 
+
   return (
     <div className="skill-section">
       <h1>Skills</h1>
       <div className="skill-container">
-        {skills.map((skill) => (
+        {skills.map((skill) => {
+             const def = ICONS_BY_KEY[skill.name];
+                if(!def) return null;
+
+                const Icon = def.icon;
+                return(
           <div className="skill-card">
             <div className="face face1">
               <div className="content">
                 <p>{skill.text}</p>
               </div>
             </div>
-
             <div className="face face2">
-              <h2 className="icon-skill">{skill.icon}</h2>
-            </div>
+                  <h2>
+                  <Icon className="icon-skill"/></h2>
           </div>
-        ))}
+           </div>
+        )})}
       </div>
     </div>
   );

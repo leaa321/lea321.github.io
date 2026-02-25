@@ -60,7 +60,7 @@
   flex-direction: column;
   background: var(--color-blur);
   color: var(--color-text);
-  border-radius: 10px;
+  border-radius: 30px;
   padding: 10px;
   font-family: "Funnel Display", sans-serif;
 }

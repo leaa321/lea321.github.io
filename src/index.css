@@ -13,6 +13,7 @@ body.light {
   --gradient-color-3: #b0cf97;
   --primary-color: rgb(223, 135, 196);
   --secondary-color: #d4689e;
+  --accent-color:  #7a0b43;
   --color-muted: black;
   --color-blur: rgba(219, 29, 175, 0.048);
   --color-card: rgba(213, 203, 181);
@@ -26,6 +27,7 @@ body.dark {
   --gradient-color-3: #792359;
   --primary-color: #d34ea2;
   --secondary-color: #cd4b97;
+  --accent-color:  #e673ac;
   --color-muted: rgb(155, 150, 150);
   --color-blur: #b9bec114;
   --color-card: #614054;
@@ -55,6 +57,13 @@ body {
     );
   background-color: var(--color-background);
   color: var(--color-text);
+
+  --text-size-small: 0px;
+  --text-size-medium-small: 0px;
+  --text-size-medium: 0px;
+  --text-size-large: 0px;
+  --text-size-larger: 0px;
+  --border-radius: 15px;
 }
 
 h1 {
