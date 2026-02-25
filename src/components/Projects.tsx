@@ -13,7 +13,7 @@ function Projects() {
         "A custom party app we built for my fathers 49th birthday.",
       link: "/projects/partyApp",
       imageLink: partyGame,
-      tags: ["react","scss"],
+      tags: ["react", "scss"],
     },
     {
       name: "Househould app",
@@ -21,7 +21,7 @@ function Projects() {
         "lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       link: "/projects/ourHome",
       imageLink: logo,
-      tags: ["react","scss"],
+      tags: ["react", "scss"],
     },
   ];
 
@@ -36,24 +36,24 @@ function Projects() {
               <p>{project.description}</p>
             </div>
             <div className="project-card-media">
-            <img src={project.imageLink} alt={project.name} />
+              <img src={project.imageLink} alt={project.name} />
             </div>
             <div className="bottom-section">
               <div className="tag-section">
-                {project.tags.map((tag)=> {
+                {project.tags.map((tag) => {
                   const def = ICONS_BY_KEY[tag];
-                  if(!def) return null;
+                  if (!def) return null;
 
                   const Icon = def.icon;
-                  return(
-                    <Icon className="tag"/>
+                  return (
+                    <Icon className="tag" />
                   )
                 })}
-                
+
               </div>
               <Link className="button" to={project.link}>
-              View Project <IoIosArrowForward />
-                </Link>
+                View Project <IoIosArrowForward className="arrow-forward" />
+              </Link>
             </div>
           </div>
         ))}

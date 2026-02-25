@@ -16,10 +16,18 @@
       display: flex;
       align-items: center;
       gap: 5px;
-      transition: 0.1s ease-in;
+      transition: color 150ms ease;
+
+      .back-arrow {
+        transition: transform 150ms ease;
+      }
 
       &:hover {
-        transform: scale(1.05);
+        color: var(--accent-color);
+
+        .back-arrow {
+          transform: translateX(-0.25rem);
+        }
       }
     }
   }
