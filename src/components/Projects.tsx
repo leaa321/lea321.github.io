@@ -1,7 +1,7 @@
 import "../style/projects.scss";
 import { IoIosArrowForward } from "react-icons/io";
 import partyGame from "../assets/projects/party-landingpage-short.png"
-import ourHome from "../assets/projects/ourhome-taskpageShort.png";
+import ourHome from "../assets/projects/ourhomelogo.png";
 import { Link } from "react-router-dom";
 import { ICONS_BY_KEY } from "./Icon";
 

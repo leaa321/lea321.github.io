@@ -1,5 +1,5 @@
 import "../style/start.scss";
-import AshPic from "../assets/2.png";
+import AshPic from "../assets/2.webp";
 import {
   IoLocationOutline,
   IoLogoGithub,

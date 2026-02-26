@@ -18,8 +18,8 @@ export function OurHomePage() {
         <p className="description">I’m still working on OurHome, an Angular task app built for two people. You create tasks, assign them to you or your partner, and earn points when they’re completed.</p>
       </div>
       <div className="project-image-section">
-        <img className="project-image-item double" src={ourHomeRewardPage} alt="party game page" />
-        <img className="project-image-item double" src={ourHomeTaskPage} alt="party game page" />
+        <img className="project-image-item double" loading="lazy" src={ourHomeRewardPage} alt="party game page" />
+        <img className="project-image-item double" loading="lazy" src={ourHomeTaskPage} alt="party game page" />
       </div>
       <div className="project-page-card project-page-box">
         <h2 className="project-card-title">
@@ -72,8 +72,8 @@ export function OurHomePage() {
           Settings
         </h2>
         <div className="project-image-section">
-          <img src={ourHomeSettingsPage} alt="ourHome settings page" className="project-image-item double" />
-          <img src={ourHomeTaskSettingsPage} alt="ourHome task settings page" className="project-image-item double" />
+          <img src={ourHomeSettingsPage} loading="lazy" alt="ourHome settings page" className="project-image-item double" />
+          <img src={ourHomeTaskSettingsPage} loading="lazy" alt="ourHome task settings page" className="project-image-item double" />
         </div>
         <p className="card-description">
           The settings area includes general and account settings, partner management, and full customization options, allowing you to create and manage your own tasks, rewards, and categories in one place.
@@ -86,7 +86,7 @@ export function OurHomePage() {
           Sorting of tasks
         </h2>
         <div className="project-image-text-section">
-          <img className="project-image-item" src={ourHomeTaskPage} alt="ourHome task page" />
+          <img className="project-image-item" loading="lazy" src={ourHomeTaskPage} alt="ourHome task page" />
           {/* ADD GIF HERE for categories*/}
           <p className="card-description ">
             Tasks can be sorted by categories to keep things clear and structured. The app comes with a few default categories, but you can create your own and assign a color to each one for easy recognition. Tasks can also be grouped by how often they repeat: daily, weekly, or monthly. <br /> <br /> When a recurring task is completed, it’s marked as done and removed from the active list until its next due time, so a weekly task like vacuuming only shows up again the following week.

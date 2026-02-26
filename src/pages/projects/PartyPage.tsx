@@ -21,8 +21,8 @@ export function PartyPage() {
         <p className="description">A custom party app we built for my fathers 49th birthday.</p>
       </div>
       <div className="project-image-section">
-        <img className="project-image-item double" src={partyGamePage} alt="party game page" />
-        <img className="project-image-item double" src={partyLandingPage} alt="party game page" />
+        <img className="project-image-item double" loading="lazy" src={partyGamePage} alt="party game page" />
+        <img className="project-image-item double" loading="lazy" src={partyLandingPage} alt="party game page" />
       </div>
       <div className="project-page-card project-page-box">
         <h2 className="project-card-title">
@@ -64,8 +64,8 @@ export function PartyPage() {
           Admin tool
         </h2>
         <div className="project-image-section">
-          <img src={partyAdminPageOne} alt="party admin page" className="project-image-item double" />
-          <img src={partyAdminPageTwo} alt="party admin page" className="project-image-item double" />
+          <img src={partyAdminPageOne} loading="lazy" alt="party admin page" className="project-image-item double" />
+          <img src={partyAdminPageTwo} loading="lazy" alt="party admin page" className="project-image-item double" />
         </div>
         <p className="card-description">
           The app includes a password-protected admin dashboard for full game management.
@@ -82,8 +82,8 @@ export function PartyPage() {
         </h2>
         <div className="project-image-section">
 
-          <img src={partyQuestionsPage} alt="party admin page" className="project-image-item double" />
-          <img src={partyGalleryPage} alt="party admin page" className="project-image-item double" />
+          <img src={partyQuestionsPage} loading="lazy" alt="party admin page" className="project-image-item double" />
+          <img src={partyGalleryPage} loading="lazy" alt="party admin page" className="project-image-item double" />
 
         </div>
         <p className="card-description">
