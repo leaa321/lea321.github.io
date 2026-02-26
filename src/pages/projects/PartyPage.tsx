@@ -1,4 +1,4 @@
-import "../../style/projects/partyPage.scss"
+import "../../style/projects/projects-page.scss"
 import partyLandingPage from "../../assets/projects/party-landingpage.png"
 import partyGamePage from "../../assets/projects/party-gamepage.png"
 import partyAdminPageOne from "../../assets/projects/party-adminsitepageOne.png"
@@ -13,7 +13,7 @@ export function PartyPage() {
   const techKeys: string[] = ["react", "scss", "nodejs"] as const;
 
   return (
-    <div className="party-page">
+    <div className="project-page">
       <div className="title-section">
         <h2 className="project-title">
           <IoSparklesOutline className="project-title-icon" />
@@ -75,7 +75,7 @@ export function PartyPage() {
         </p>
 
       </div>
-      <div className="project-page-card ">
+      <div className="project-page-card">
         <h2 className="project-card-title">
           <IoShareSocialOutline className="project-card-title-icon" />
           Sharing tool

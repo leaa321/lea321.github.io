@@ -2,14 +2,15 @@ import ourHomeRewardPage from "../../assets/projects/ourhome-rewardpage.png";
 import ourHomeTaskPage from "../../assets/projects/ourhome-taskpage.png";
 import ourHomeSettingsPage from "../../assets/projects/ourhome-settingspage.png";
 import ourHomeTaskSettingsPage from "../../assets/projects/ourhome-settingspageTasks.png";
-import { IoCheckboxOutline, IoFilterOutline, IoGiftOutline, IoServerOutline, IoSettingsOutline, IoStarOutline, IoTimeOutline } from "react-icons/io5";
+import { IoCheckboxOutline, IoFilterOutline, IoGiftOutline, IoLogoFirebase, IoServerOutline, IoSettingsOutline, IoStarOutline, IoTimeOutline } from "react-icons/io5";
 import TechStack from "../../components/TechStack";
+import { SiSpring } from "react-icons/si";
 
 export function OurHomePage() {
   const techKeys: string[] = ["react", "scss", "springboot", "firebase"] as const;
 
   return (
-    <div className="party-page">
+    <div className="project-page">
       <div className="title-section">
         <h2 className="project-title">
           <IoCheckboxOutline className="project-title-icon" />
@@ -94,14 +95,21 @@ export function OurHomePage() {
       <div className="project-page-card ">
         <h2 className="project-card-title">
           <IoServerOutline className="project-card-title-icon" />
-          Java Spring Boot
+          Backend logic
         </h2>
-        <div className="project-image-section">
-          {/* ADD GIF HERE for categories*/}
-        </div>
-        <p className="card-description">
-          The backend is a Java Spring Boot REST API that manages partner linking, tasks, recurring schedules, points, rewards, and categories, exposing clean endpoints the Angular frontend uses to create, update, and track everything
-        </p>
+        <div className="project-page-card project-page-box">
+          <h2 className="project-card-title"><SiSpring className="project-card-title-icon" />
+            Spring Boot API</h2>
+          <p className="description">
+            The backend is a Java Spring Boot REST API that manages tasks, recurring schedules, points, rewards, and categories. It exposes clean endpoints the Angular frontend uses to create, update, and track everything.
+          </p></div>
+        <div className="project-page-card project-page-box">
+
+          <h2 className="project-card-title">
+            <IoLogoFirebase className="project-card-title-icon" />
+            Firebase Authentication</h2>
+          <p className="description">
+            The account system is based on Firebase Authentication, which handles sign-up, login, and user identity. Since this is my first time working with Firebase, I’m currently learning and integrating the authentication step by step.          </p></div>
       </div>
 
       {/* Add explanation of api */}

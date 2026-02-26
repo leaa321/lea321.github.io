@@ -9,6 +9,7 @@ import {
   IoLogoReact,
   IoLogoSass,
 } from "react-icons/io5";
+import { SiSpring } from "react-icons/si";
 
 export type IconComponent = IconType;
 
@@ -26,7 +27,7 @@ export const FRAMEWORK_ICONS: IconDef[] = [
   { key: "html", label: "HTML", icon: IoLogoHtml5, color: "#e48124" },
   { key: "java", label: "Java", icon: DiJava, color: "#a59ea2" },
   { key: "nodejs", label: "NodeJs", icon: IoLogoNodejs, color: "#77b45f" },
-  { key: "springboot", label: "SpringBoot", icon: IoLogoNodejs, color: "#5d8a4b" },
+  { key: "springboot", label: "SpringBoot", icon: SiSpring, color: "#5d8a4b" },
   { key: "firebase", label: "Firebase", icon: IoLogoFirebase, color: "#e26640" },
 ];
 
