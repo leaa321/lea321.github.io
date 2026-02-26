@@ -1,7 +1,7 @@
 import "../style/projects.scss";
 import { IoIosArrowForward } from "react-icons/io";
 import partyGame from "../assets/projects/party-landingpage-short.png"
-import ourHome from "../assets/projects/ourhome-rewardpageShort.png";
+import ourHome from "../assets/projects/ourhome-taskpageShort.png";
 import { Link } from "react-router-dom";
 import { ICONS_BY_KEY } from "./Icon";
 
@@ -33,8 +33,10 @@ function Projects() {
           <div className="project-card">
             <div className="project-text-section">
               <h2>{project.name}</h2>
+
               <p>{project.description}</p>
             </div>
+
             <div className="project-card-media">
               <img src={project.imageLink} alt={project.name} />
             </div>
