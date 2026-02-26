@@ -112,6 +112,12 @@ footer {
   }
 }
 
+@media(height >=751px) {
+  body {
+    --icon-size-medium: 4rem;
+  }
+}
+
 @media (max-height : 750px),
 (max-width: 750px) {
   body {

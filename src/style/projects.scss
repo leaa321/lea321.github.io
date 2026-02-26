@@ -7,6 +7,7 @@
     flex-direction: row;
     justify-content: center;
     gap: 15px;
+    padding: 10px;
 
     .project-card {
       background-color: var(--color-card);
@@ -41,8 +42,9 @@
       }
 
       .project-text-section {
-        text-align: center;
+        text-align: left;
         font-size: var(--text-size-medium);
+        margin: 0;
 
         p {
           text-align: left;
@@ -71,6 +73,7 @@
         justify-content: space-between;
         width: 100%;
         align-self: start;
+        margin-top: 17px;
 
         .button {
           border: 1px solid var(--color-text);
@@ -128,7 +131,6 @@
     .card-container {
       max-width: 550px;
       margin: 0 auto;
-      justify-content: space-evenly;
 
       .project-card {
         height: 100%;
