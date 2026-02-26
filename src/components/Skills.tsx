@@ -5,23 +5,28 @@ import { ICONS_BY_KEY } from "./Icon";
 function Skills() {
   const skills = [
     {
-      name: "angular",
+      name: "Angular",
+      key: "angular",
       text: "I’m learning Angular by building a shared to-do app and I'm really enjoying working with the framework.",
     },
     {
-      name: "react",
+      name: "React",
+      key: "react",
       text: "I built this website using React, focusing on a clean and simple structure.",
     },
     {
-      name: "scss",
+      name: "Scss",
+      key: "scss",
       text: "I use SCSS for styling because it keeps the design clean and scalable, and I enjoy working with it.",
     },
     {
-      name: "html",
+      name: "Html",
+      key: "html",
       text: "HTML is the foundation of my web projects and always part of my workflow.",
     },
     {
-      name: "java",
+      name: "Java",
+      key: "java",
       text: "I’m learning Java in my apprenticeship and use it to build backend applications.",
     },
   ];
@@ -54,7 +59,7 @@ function Skills() {
       <h1>Skills</h1>
       <div className="skill-container">
         {skills.map((skill) => {
-          const def = ICONS_BY_KEY[skill.name];
+          const def = ICONS_BY_KEY[skill.key];
           if (!def) return null;
 
           const Icon = def.icon;
@@ -67,7 +72,12 @@ function Skills() {
               </div>
               <div className="face face2">
                 <h2>
-                  <Icon className="icon-skill" /></h2>
+                  <Icon className="icon-skill" />
+                  <p className="icon-skill-text">
+                    {skill.name}
+
+                  </p>
+                </h2>
               </div>
             </div>
           )
