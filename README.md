@@ -34,4 +34,3 @@ npm install bash
 ## Deployment
 
 Once you merge into the main branch, GitHub Pages will automatically build and deploy your app to [ashley.thiering.org](https://ashley.thiering.org/)
----
