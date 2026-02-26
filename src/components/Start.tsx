@@ -81,7 +81,7 @@ function Start() {
         </div>
         <p className="text-box">
           I'm currently doing my apprenticeship at HEC as a software Engineer. I
-          have a passion for coding. Outside of career and academics, I enjoy
+          really enjoy coding and trying out new stuff. Outside of career and academics, I enjoy
           playing volleyball, editing Videos, running and cooking!
         </p>
       </div>
