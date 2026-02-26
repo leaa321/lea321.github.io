@@ -18,8 +18,8 @@ export function OurHomePage() {
         <p className="description">I’m still working on OurHome, an Angular task app built for two people. You create tasks, assign them to you or your partner, and earn points when they’re completed.</p>
       </div>
       <div className="project-image-section">
-        <img className="project-image-item" src={ourHomeRewardPage} alt="party game page" />
-        <img className="project-image-item" src={ourHomeTaskPage} alt="party game page" />
+        <img className="project-image-item double" src={ourHomeRewardPage} alt="party game page" />
+        <img className="project-image-item double" src={ourHomeTaskPage} alt="party game page" />
       </div>
       <div className="project-page-card project-page-box">
         <h2 className="project-card-title">
@@ -72,8 +72,8 @@ export function OurHomePage() {
           Settings
         </h2>
         <div className="project-image-section">
-          <img src={ourHomeSettingsPage} alt="ourHome settings page" className="project-image-item" />
-          <img src={ourHomeTaskSettingsPage} alt="ourHome task settings page" className="project-image-item" />
+          <img src={ourHomeSettingsPage} alt="ourHome settings page" className="project-image-item double" />
+          <img src={ourHomeTaskSettingsPage} alt="ourHome task settings page" className="project-image-item double" />
         </div>
         <p className="card-description">
           The settings area includes general and account settings, partner management, and full customization options, allowing you to create and manage your own tasks, rewards, and categories in one place.
@@ -85,12 +85,13 @@ export function OurHomePage() {
           <IoFilterOutline className="project-card-title-icon" />
           Sorting of tasks
         </h2>
-        <div className="project-image-section">
+        <div className="project-image-text-section">
+          <img className="project-image-item" src={ourHomeTaskPage} alt="party game page" />
           {/* ADD GIF HERE for categories*/}
+          <p className="card-description ">
+            Tasks can be sorted by categories to keep things clear and structured. The app comes with a few default categories, but you can create your own and assign a color to each one for easy recognition. Tasks can also be grouped by how often they repeat: daily, weekly, or monthly. <br /> <br /> When a recurring task is completed, it’s marked as done and removed from the active list until its next due time, so a weekly task like vacuuming only shows up again the following week.
+          </p>
         </div>
-        <p className="card-description">
-          Tasks can be sorted by categories to keep things clear and structured. The app comes with a few default categories, but you can create your own and assign a color to each one for easy recognition. Tasks can also be grouped by how often they repeat: daily, weekly, or monthly. <br /> <br /> When a recurring task is completed, it’s marked as done and removed from the active list until its next due time, so a weekly task like vacuuming only shows up again the following week.
-        </p>
       </div>
       <div className="project-page-card ">
         <h2 className="project-card-title">
@@ -111,8 +112,10 @@ export function OurHomePage() {
           <p className="description">
             The account system is based on Firebase Authentication, which handles sign-up, login, and user identity. Since this is my first time working with Firebase, I’m currently learning and integrating the authentication step by step.          </p></div>
       </div>
-
-      {/* Add explanation of api */}
-      {/* Add coming soon firebase */}
+      <div className="project-page-card">
+        <h2 className="project-card-title">
+          More stuff coming soon...
+        </h2>
+      </div>
     </div>);
 }
