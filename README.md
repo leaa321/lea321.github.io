@@ -22,12 +22,14 @@ https://github.com/leaa321/lea321.github.io.git
 ```
 2. Navigate to the project directory:
 ```bash
-cd lea321.github.io```
+cd lea321.github.io 
+```
 
 3. Install the dependencies:
 
 ```bash 
-npm install bash```
+npm install bash
+```
 
 ## Deployment
 
