@@ -109,7 +109,7 @@
 
         .tag-section {
           display: flex;
-          gap: 10px;
+          gap: 5px;
           flex-wrap: wrap;
           width: 50%;
 
@@ -119,8 +119,9 @@
             padding: 2px 20px;
             border: 1px solid var(--color-text);
             border-radius: 99px;
-            font-size: var(--icon-size-small);
+            font-size: var(--font-size-small);
             gap: 5px;
+            margin: 0;
           }
         }
       }

@@ -1,6 +1,6 @@
 import "../style/projects.scss";
 import { IoIosArrowForward } from "react-icons/io";
-import partyGame from "../assets/projects/party-landingpage-short.png"
+import partyGame from "../assets/projects/party-landingpage-short.png";
 import ourHome from "../assets/projects/ourhomelogo.png";
 import { Link } from "react-router-dom";
 import { ICONS_BY_KEY } from "./Icon";
@@ -9,8 +9,7 @@ function Projects() {
   const projects = [
     {
       name: "Party app",
-      description:
-        "A custom party app we built for my fathers 49th birthday.",
+      description: "A custom party app we built for my fathers 49th birthday.",
       link: "/projects/partyApp",
       imageLink: partyGame,
       tags: ["react", "scss", "nodejs"],
@@ -44,14 +43,19 @@ function Projects() {
                 {project.tags.map((tag) => {
                   const def = ICONS_BY_KEY[tag];
                   if (!def) return null;
-
-                  const Icon = def.icon;
                   const IconColor = def.color ?? "#ffff";
                   return (
-                    <Icon className="tag" style={{ color: IconColor, border: "1px solid" + IconColor }} />
-                  )
+                    <div
+                      className="tag"
+                      style={{
+                        color: IconColor,
+                        border: "1px solid" + IconColor,
+                      }}
+                    >
+                      {tag}{" "}
+                    </div>
+                  );
                 })}
-
               </div>
               <Link className="button" to={project.link}>
                 View Project <IoIosArrowForward className="arrow-forward" />
