@@ -15,7 +15,7 @@ function Projects() {
       tags: ["react", "scss", "nodejs"],
     },
     {
-      name: "Househould app",
+      name: "Household app",
       description:
         "I’m currently working on an Angular app where two partners manage shared tasks and individually earn points to unlock their own rewards.",
       link: "/projects/ourHome",
