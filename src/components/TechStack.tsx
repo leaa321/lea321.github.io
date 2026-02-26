@@ -6,31 +6,32 @@ type TechStackType = {
   techKeys: string[];
 };
 
-function TechStack({techKeys}: TechStackType){
-    return(
-      <div className="tech-stack-body">
+function TechStack({ techKeys }: TechStackType) {
+  return (
+    <div className="tech-stack-body">
       <h2 className="tech-stack-title">
-            <IoCodeOutline className="project-card-title-icon"/>
-          Tech stack
-        </h2>
+        <IoCodeOutline className="project-card-title-icon" />
+        Tech stack
+      </h2>
       <ul className="tech-stack">
-          {
-            techKeys.map((key) => {
-              const def = ICONS_BY_KEY[key];
-              if (!def) return null;
-      
-              const Icon = def.icon;
-              return (
-                <li key={def.key} className="tech-item" title={def.label} aria-label={def.label}>
-                  <Icon className="tech-icon"/>
-                  <span className="tech-label">{def.label}</span>
-                </li>
-              );
-            })
-          }
+        {
+          techKeys.map((key) => {
+            const def = ICONS_BY_KEY[key];
+            if (!def) return null;
+
+            const Icon = def.icon;
+            const IconColor = def.color;
+            return (
+              <li key={def.key} className="tech-item" title={def.label} aria-label={def.label}>
+                <Icon className="tech-icon" style={{ color: IconColor }} />
+                <span className="tech-label">{def.label}</span>
+              </li>
+            );
+          })
+        }
       </ul>
-      </div>
-    );
+    </div>
+  );
 }
 
 export default TechStack;
