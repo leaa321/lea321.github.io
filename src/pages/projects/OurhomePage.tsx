@@ -86,7 +86,7 @@ export function OurHomePage() {
           Sorting of tasks
         </h2>
         <div className="project-image-text-section">
-          <img className="project-image-item" src={ourHomeTaskPage} alt="party game page" />
+          <img className="project-image-item" src={ourHomeTaskPage} alt="ourHome task page" />
           {/* ADD GIF HERE for categories*/}
           <p className="card-description ">
             Tasks can be sorted by categories to keep things clear and structured. The app comes with a few default categories, but you can create your own and assign a color to each one for easy recognition. Tasks can also be grouped by how often they repeat: daily, weekly, or monthly. <br /> <br /> When a recurring task is completed, it’s marked as done and removed from the active list until its next due time, so a weekly task like vacuuming only shows up again the following week.

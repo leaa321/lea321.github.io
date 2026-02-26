@@ -123,6 +123,16 @@
                 }
             }
 
+            .project-image-item {
+                width: 50%;
+                border-radius: var(--border-radius);
+
+                &.double {
+                    align-self: center;
+                    width: 45%;
+                }
+            }
+
             .project-image-text-section {
                 display: flex;
                 gap: 10px;
