@@ -1,13 +1,26 @@
-Hey there, gorgeous! ✨ Welcome to my little corner of the internet, hosted right here on **GitHub Pages**!
-
+# 🌐 ashley.thiering.org
+This project is a personal website built using React, TypeScript, and Vite. The website is designed to be responsive, providing an optimal viewing experience across various devices and screen sizes.
 ---
-
-## About This Pretty Place 💖
-
-This repository holds the code for my personal website. Think of it as my digital diary, portfolio, and all-around happy place, crafted with love and a sprinkle of sparkle. You'll find everything from my latest projects to what's inspiring me right now – all designed to give you a peek into my world.
-
+# Features
 ---
-
-## Connect with Me! 💌
-
-Got a question or just want to say hi? I'd love to hear from you! You can find my social links on the website itself.
+- Modern Tech Stack: Built with React, TypeScript, and Vite (SWC) for fast, reliable development.
+- Responsive Design: Adapts smoothly to desktops, tablets, and smartphones.
+---
+# Getting started
+---
+Needed technology:
+- Node.js
+- npm
+- Sass
+## Installation
+1. Clone the repository to your local machine:
+`https://github.com/leaa321/lea321.github.io.git`
+2. Navigate to the project directory:
+`cd lea321.github.io`
+3. Install the dependencies:
+`npm install`
+---
+# Deployment
+---
+Once you merge into the main branch, GitHub Pages will automatically build and deploy your app to [ashley.thiering.org](https://ashley.thiering.org/)
+---
