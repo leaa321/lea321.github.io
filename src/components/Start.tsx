@@ -26,7 +26,7 @@ function Start() {
     element.classList.add("animate");
     isHandAnimatingRef.current = true;
     setTimeout(() => {
-      element.classList.remove("animate")
+      element.classList.remove("animate");
       isHandAnimatingRef.current = false;
     }, 1500);
   };
@@ -81,8 +81,9 @@ function Start() {
         </div>
         <p className="text-box">
           I'm currently doing my apprenticeship at HEC as a software Engineer. I
-          really enjoy coding and trying out new stuff. Outside of career and academics, I enjoy
-          playing volleyball, editing Videos, running and cooking!
+          really enjoy coding and trying out new stuff. Outside of career and
+          academics, I enjoy playing volleyball, editing Videos, running and
+          cooking!
         </p>
       </div>
 
@@ -102,7 +103,7 @@ function Start() {
               </a>
             </li>
             <li>
-              <a href="https://de.linkedin.com/in/lea-drewes">
+              <a href="https://www.linkedin.com/in/lea-drewes-89b75637b/">
                 <IoLogoLinkedin className="icon" />
               </a>
             </li>
