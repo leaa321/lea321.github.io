@@ -15,9 +15,9 @@ function Skills() {
       text: "I built this website using React, focusing on a clean and simple structure.",
     },
     {
-      name: "Scss",
+      name: "Sass",
       key: "scss",
-      text: "I use SCSS for styling because it keeps the design clean and scalable, and I enjoy working with it.",
+      text: "I use Sass for styling because it keeps the design clean and scalable, and I enjoy working with it.",
     },
     {
       name: "Html",
