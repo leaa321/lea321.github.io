@@ -6,23 +6,23 @@ function Skills() {
   const skills = [
     {
       name: "angular",
-      text: "I’m currently learning Angular and building a web app where you manage shared todos with a partner, including a points and rewards system.",
+      text: "I’m learning Angular by building a shared to-do app and I'm really enjoying working with the framework.",
     },
     {
       name: "react",
-      text: "I built this website using React.",
+      text: "I built this website using React, focusing on a clean and simple structure.",
     },
     {
       name: "scss",
-      text: "I use SCSS for all my styling because it keeps my design clean and scalable, and I genuinely enjoy working with it.",
+      text: "I use SCSS for styling because it keeps the design clean and scalable, and I enjoy working with it.",
     },
     {
       name: "html",
-      text: "HTML is the core foundation of web development, so it’s always part of my workflow.",
+      text: "HTML is the foundation of my web projects and always part of my workflow.",
     },
     {
       name: "java",
-      text: "I’m learning Java in my apprenticeship and used it to build multiple backend applications.",
+      text: "I’m learning Java in my apprenticeship and use it to build backend applications.",
     },
   ];
   useEffect(() => {
@@ -54,23 +54,24 @@ function Skills() {
       <h1>Skills</h1>
       <div className="skill-container">
         {skills.map((skill) => {
-             const def = ICONS_BY_KEY[skill.name];
-                if(!def) return null;
+          const def = ICONS_BY_KEY[skill.name];
+          if (!def) return null;
 
-                const Icon = def.icon;
-                return(
-          <div className="skill-card">
-            <div className="face face1">
-              <div className="content">
-                <p>{skill.text}</p>
+          const Icon = def.icon;
+          return (
+            <div className="skill-card">
+              <div className="face face1">
+                <div className="content">
+                  <p>{skill.text}</p>
+                </div>
+              </div>
+              <div className="face face2">
+                <h2>
+                  <Icon className="icon-skill" /></h2>
               </div>
             </div>
-            <div className="face face2">
-                  <h2>
-                  <Icon className="icon-skill"/></h2>
-          </div>
-           </div>
-        )})}
+          )
+        })}
       </div>
     </div>
   );
