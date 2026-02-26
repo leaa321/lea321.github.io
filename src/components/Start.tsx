@@ -12,6 +12,7 @@ function Start() {
   const handRef = useRef<HTMLSpanElement>(null);
   const locRef = useRef<HTMLAnchorElement>(null);
   const isAnimatingRef = useRef(false);
+  const isHandAnimatingRef = useRef(false);
 
   useEffect(() => {
     handleHover();
@@ -20,10 +21,14 @@ function Start() {
   const handleHover = () => {
     const element = handRef.current;
     if (!element) return;
+    if (isHandAnimatingRef.current) return;
 
     element.classList.add("animate");
-
-    setTimeout(() => element.classList.remove("animate"), 1500);
+    isHandAnimatingRef.current = true;
+    setTimeout(() => {
+      element.classList.remove("animate")
+      isHandAnimatingRef.current = false;
+    }, 1500);
   };
 
   const handleLocationBeginning = () => {
