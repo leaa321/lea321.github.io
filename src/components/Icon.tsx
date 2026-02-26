@@ -17,7 +17,7 @@ export type IconDef = {
   key: string;
   label: string;
   icon: IconComponent;
-  color: string;
+  color: string | undefined;
 };
 
 export const FRAMEWORK_ICONS: IconDef[] = [

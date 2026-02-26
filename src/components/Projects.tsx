@@ -4,8 +4,10 @@ import partyGame from "../assets/projects/party-landingpage-short.png"
 import ourHome from "../assets/projects/ourhomelogo.png";
 import { Link } from "react-router-dom";
 import { ICONS_BY_KEY } from "./Icon";
+import { useEffect, useState } from "react";
 
 function Projects() {
+  const [tagColor, setTagColor] = useState("#ffff");
   const projects = [
     {
       name: "Party app",
@@ -47,8 +49,9 @@ function Projects() {
                   if (!def) return null;
 
                   const Icon = def.icon;
+                  const IconColor = def.color ?? "#ffff";
                   return (
-                    <Icon className="tag" />
+                    <Icon className="tag" style={{ color: IconColor, border: "1px solid" + IconColor }} />
                   )
                 })}
 
