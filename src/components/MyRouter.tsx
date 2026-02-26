@@ -1,14 +1,15 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import App from "./App";
-import { PartyPage } from "./projects/PartyPage";
-import { ProjectLayout } from "./ProjectLayout";
-import { OurHomePage } from "./projects/OurhomePage";
-import { ScrollManager } from "../components/ScrollMangager";
+import App from "../pages/App";
+import { PartyPage } from "../pages/projects/PartyPage";
+import { ProjectLayout } from "../pages/ProjectLayout";
+import { OurHomePage } from "../pages/projects/OurhomePage";
+import { ScrollManager } from "./ScrollMangager";
+import { NotFound } from "./NotFound";
 
 export function MyRouter() {
   return (
     <BrowserRouter>
-    <ScrollManager />
+      <ScrollManager />
       <Routes>
         <Route index element={<App />} />
         <Route path="/" element={<App />} />
@@ -18,9 +19,10 @@ export function MyRouter() {
           <Route path="ourHome" element={<OurHomePage />} />
         </Route>
 
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
 }
-          {/* 404
+{/* 404
           <Route path="*" element={<NotFound />} /> */}
