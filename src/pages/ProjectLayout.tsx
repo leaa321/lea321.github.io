@@ -9,7 +9,7 @@ export function ProjectLayout() {
       <Header />
       <main className="project-content">
         <nav className="project-back" aria-label="Back to homepage">
-          <Link to="/" className="project-back-link">
+          <Link to="/#projects" className="project-back-link">
             <BackArrow className="back-arrow" aria-hidden="true" />
             <span>Back to portfolio</span>
           </Link>

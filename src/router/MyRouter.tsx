@@ -4,12 +4,14 @@ import { PartyPage } from "../pages/projects/PartyPage";
 import { ProjectLayout } from "../pages/ProjectLayout";
 import { OurHomePage } from "../pages/projects/OurhomePage";
 import { ScrollManager } from "./ScrollMangager";
-import { NotFound } from "./NotFound";
+import { NotFound } from "../components/NotFound";
+import ScrollToAnchor from "./ScrollToAnchor";
 
 export function MyRouter() {
   return (
     <BrowserRouter>
       <ScrollManager />
+      <ScrollToAnchor />
       <Routes>
         <Route index element={<App />} />
         <Route path="/" element={<App />} />
@@ -24,5 +26,3 @@ export function MyRouter() {
     </BrowserRouter>
   );
 }
-{/* 404
-          <Route path="*" element={<NotFound />} /> */}

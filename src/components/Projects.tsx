@@ -25,7 +25,7 @@ function Projects() {
   ];
 
   return (
-    <div className="project-section">
+    <div className="project-section" id="projects">
       <h1>Projects</h1>
       <div className="card-container">
         {projects.map((project) => (
@@ -43,16 +43,17 @@ function Projects() {
                 {project.tags.map((tag) => {
                   const def = ICONS_BY_KEY[tag];
                   if (!def) return null;
-                  const IconColor = def.color ?? "#ffff";
+                  const iconColor = def.color ?? "#ffff";
+                  const iconLabel = def.label;
                   return (
                     <div
                       className="tag"
                       style={{
-                        color: IconColor,
-                        border: "1px solid" + IconColor,
+                        color: iconColor,
+                        border: "1px solid" + iconColor,
                       }}
                     >
-                      {tag}{" "}
+                      {iconLabel}{" "}
                     </div>
                   );
                 })}
