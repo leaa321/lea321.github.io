@@ -21,13 +21,13 @@ export type IconDef = {
 };
 
 export const FRAMEWORK_ICONS: IconDef[] = [
-  { key: "angular", label: "Angular", icon: IoLogoAngular, color: "#bd498d" },
-  { key: "react", label: "React", icon: IoLogoReact, color: "#4b7ce7" },
+  { key: "angular", label: "Angular", icon: IoLogoAngular, color: "#db57c7" },
+  { key: "react", label: "React", icon: IoLogoReact, color: "#628de9" },
   { key: "scss", label: "SCSS", icon: IoLogoSass, color: "#e74ba6" },
   { key: "html", label: "HTML", icon: IoLogoHtml5, color: "#e48124" },
   { key: "java", label: "Java", icon: DiJava, color: "#a59ea2" },
   { key: "nodejs", label: "NodeJs", icon: IoLogoNodejs, color: "#77b45f" },
-  { key: "springboot", label: "SpringBoot", icon: SiSpring, color: "#5d8a4b" },
+  { key: "springboot", label: "SpringBoot", icon: SiSpring, color: "#5c9148" },
   { key: "firebase", label: "Firebase", icon: IoLogoFirebase, color: "#e26640" },
 ];
 

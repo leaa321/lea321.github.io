@@ -53,7 +53,7 @@
           content: "";
           position: absolute;
           width: 50%;
-          border: solid var(--primary-color);
+          border: solid var(--accent-color);
         }
 
         &:nth-child(odd)::before {
@@ -104,7 +104,7 @@
           }
 
           .title {
-            color: var(--secondary-color);
+            color: var(--accent-color);
             position: relative;
             font-family: "Bagel Fat One";
             margin-bottom: 2px;
