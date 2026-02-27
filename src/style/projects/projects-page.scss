@@ -79,6 +79,7 @@
                 .feature-icon {
                     color: var(--accent-color);
                     font-size: var(--icon-size-large);
+                    flex-shrink: 0.5;
                 }
             }
         }
@@ -109,7 +110,7 @@
 
     &.double {
         align-self: center;
-        width: 40%;
+        width: 45%;
     }
 }
 
