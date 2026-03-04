@@ -1,0 +1,14 @@
+.toggleLanguage {
+    background-color: transparent;
+    color: var(--color-text);
+    border: none;
+    font-size: var(--font-size-larger);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}

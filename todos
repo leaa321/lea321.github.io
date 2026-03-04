@@ -1,4 +1,5 @@
 // - add work projects page with little sum of cool stuff
+<<<<<<< HEAD
 // - add german and english - about me more professionel text
 //TODO - make ourHome plus video
 
@@ -9,3 +10,10 @@
 // - Wheel clicking "view projects" or trying to right click and open in a new tab reopens the index page, which kind of ruins the UX for wheel-clickers.
 // - make bigger font in project pics
 
+=======
+//TODO - make ourHome plus video
+
+//!fix start text on german
+
+//TODO - add to linkedin
+>>>>>>> feature/languageSupport

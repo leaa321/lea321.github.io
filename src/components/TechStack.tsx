@@ -1,17 +1,21 @@
 import { ICONS_BY_KEY } from "./Icon";
 import "../style/techstack.scss"
 import { IoCodeOutline } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
+import "../i18n"
 
 type TechStackType = {
   techKeys: string[];
 };
 
 function TechStack({ techKeys }: TechStackType) {
+  const { t } = useTranslation();
+
   return (
     <div className="tech-stack-body">
       <h2 className="tech-stack-title">
         <IoCodeOutline className="project-card-title-icon" />
-        Tech stack
+        {t("techstack.title")}
       </h2>
       <ul className="tech-stack">
         {

@@ -7,12 +7,16 @@ import {
   IoMailOutline,
 } from "react-icons/io5";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
+import "../i18n"
 
 function Start() {
   const handRef = useRef<HTMLSpanElement>(null);
   const locRef = useRef<HTMLAnchorElement>(null);
   const isAnimatingRef = useRef(false);
   const isHandAnimatingRef = useRef(false);
+  const { t } = useTranslation();
+
 
   useEffect(() => {
     handleHover();
@@ -59,7 +63,10 @@ function Start() {
       <div className="text-container">
         <div className="text-box-title">
           <h1 className="textContent">
-            Hi I'm <span className="name">Ashley!</span>{" "}
+            <span className="greeting">
+              {t("start.greeting")}
+            </span>
+            <span className="name">Ashley!</span>{" "}
             <span
               className="handToggle"
               ref={handRef}
@@ -76,7 +83,7 @@ function Start() {
             className="location"
           >
             <IoLocationOutline />
-            Germany, Bremen
+            {t("start.location")}
           </a>
         </div>
         <p className="text-box">
@@ -84,6 +91,7 @@ function Start() {
           really enjoy coding and trying out new stuff. Outside of career and
           academics, I enjoy playing volleyball, editing videos, running and
           cooking!
+          {t("start.text")}
         </p>
       </div>
 
