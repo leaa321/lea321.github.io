@@ -10,8 +10,8 @@ import ScrollToAnchor from "./ScrollToAnchor";
 export function MyRouter() {
   return (
     <BrowserRouter>
-      <ScrollManager />
       <ScrollToAnchor />
+      <ScrollManager />
       <Routes>
         <Route index element={<App />} />
         <Route path="/" element={<App />} />

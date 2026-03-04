@@ -28,7 +28,7 @@ function Projects() {
   ];
 
   return (
-    <div className="project-section">
+    <div className="project-section" id="projects">
       <h1> {t("projects.title")}</h1>
       <div className="card-container">
         {projects.map((project) => (
