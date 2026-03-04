@@ -4,21 +4,23 @@ import partyGame from "../assets/projects/party-landingpage-short.png"
 import ourHome from "../assets/projects/ourhomelogo.png";
 import { Link } from "react-router-dom";
 import { ICONS_BY_KEY } from "./Icon";
+import { useTranslation } from "react-i18next";
+import "../i18n"
 
 function Projects() {
+  const { t } = useTranslation();
   const projects = [
     {
       name: "Party app",
       description:
-        "A custom party app we built for my fathers 49th birthday.",
+        t("projects.description.partyApp"),
       link: "/projects/partyApp",
       imageLink: partyGame,
       tags: ["react", "scss", "nodejs"],
     },
     {
       name: "Househould app",
-      description:
-        "I’m currently working on an Angular app where two partners manage shared tasks and individually earn points to unlock their own rewards.",
+      description: t("projects.description.ourHome"),
       link: "/projects/ourHome",
       imageLink: ourHome,
       tags: ["angular", "scss", "springboot", "firebase"],
@@ -27,7 +29,7 @@ function Projects() {
 
   return (
     <div className="project-section">
-      <h1>Projects</h1>
+      <h1> {t("projects.title")}</h1>
       <div className="card-container">
         {projects.map((project) => (
           <div className="project-card">
@@ -54,7 +56,7 @@ function Projects() {
 
               </div>
               <Link className="button" to={project.link}>
-                View Project <IoIosArrowForward className="arrow-forward" />
+                {t("projects.button")} <IoIosArrowForward className="arrow-forward" />
               </Link>
             </div>
           </div>

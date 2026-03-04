@@ -1,7 +1,10 @@
 import { useEffect } from "react";
 import "../style/education.scss";
+import { useTranslation } from "react-i18next";
+import "../i18n"
 
 function Education() {
+  const { t } = useTranslation();
   useEffect(() => {
     const cards = document.querySelectorAll(".card");
     if (!cards || cards.length === 0) return;
@@ -25,28 +28,27 @@ function Education() {
 
   return (
     <section className="education-section">
-      <h1>Education</h1>
+      <h1>{t("education.title")}</h1>
       <div className="timeline">
         <div className="outer">
           <div className="card">
             <div className="info">
               <h3 className="title">2025</h3>
-              <p>started my apprenticeship at HEC</p>
+              <p> {t("education.text.hec")}</p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h3 className="title">2024</h3>
               <p>
-                studied for one year at the university of public administration
-                and did my police studies there
+                {t("education.text.police")}
               </p>
             </div>
           </div>
           <div className="card">
             <div className="info">
               <h3 className="title">2024</h3>
-              <p>finished my A-Levels at Gymnaisium Syke</p>
+              <p>{t("education.text.school")}</p>
             </div>
           </div>
         </div>

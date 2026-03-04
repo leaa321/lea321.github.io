@@ -1,33 +1,37 @@
 import { useEffect } from "react";
 import "../style/skills.scss";
 import { ICONS_BY_KEY } from "./Icon";
+import { useTranslation } from "react-i18next";
+import "../i18n"
 
 function Skills() {
+  const { t } = useTranslation();
+
   const skills = [
     {
       name: "Angular",
       key: "angular",
-      text: "I’m learning Angular by building a shared to-do app and I'm really enjoying working with the framework.",
+      text: t("skills.text.angular"),
     },
     {
       name: "React",
       key: "react",
-      text: "I built this website using React, focusing on a clean and simple structure.",
+      text: t("skills.text.react"),
     },
     {
       name: "Sass",
       key: "scss",
-      text: "I use Sass for styling because it keeps the design clean and scalable, and I enjoy working with it.",
+      text: t("skills.text.sass"),
     },
     {
       name: "Html",
       key: "html",
-      text: "HTML is the foundation of my web projects and always part of my workflow.",
+      text: t("skills.text.html"),
     },
     {
       name: "Java",
       key: "java",
-      text: "I’m learning Java in my apprenticeship and use it to build backend applications.",
+      text: t("skills.text.java"),
     },
   ];
   useEffect(() => {
@@ -56,7 +60,7 @@ function Skills() {
 
   return (
     <div className="skill-section">
-      <h1>Skills</h1>
+      <h1>{t("skills.title")}</h1>
       <div className="skill-container">
         {skills.map((skill) => {
           const def = ICONS_BY_KEY[skill.key];

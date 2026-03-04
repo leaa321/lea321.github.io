@@ -1,8 +1,10 @@
 import { useTranslation } from "react-i18next";
+import "../style/languageSwitch.scss"
 
 export function LanguageSwitch() {
     const { i18n } = useTranslation();
     const activeLanguage = (i18n.resolvedLanguage ?? i18n.resolvedLanguage ?? "en").toLowerCase().startsWith("de") ? "de" : "en";
+    const nonActiveLanguage = (i18n.resolvedLanguage ?? "en").toLowerCase().startsWith("de") ? "en" : "de";
 
     const setLanguage = (language: "en" | "de") => {
         if (activeLanguage !== language) {
@@ -19,8 +21,8 @@ export function LanguageSwitch() {
 
     return (
         <>
-            <button onClick={toggleLanguage}>
-
+            <button onClick={toggleLanguage} className="toggleLanguage">
+                {nonActiveLanguage.toUpperCase()}
             </button>
         </>
     );

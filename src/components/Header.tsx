@@ -10,8 +10,9 @@ function Header() {
       <Link className="name-header" to="/" onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}>
         ASHLEY
       </Link>
-      <LanguageSwitch />
-      <ThemeSwitch />
+      <div className="right-side">
+        <LanguageSwitch />
+        <ThemeSwitch /></div>
     </header>
   );
 }
