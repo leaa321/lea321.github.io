@@ -20,6 +20,14 @@ header {
     transition: transform 1s ease;
   }
 
+  .right-side {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+  }
+
   #toggleMode {
     font-size: var(--icon-size-large);
     background: none;
