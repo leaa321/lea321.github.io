@@ -17,11 +17,9 @@ function App() {
       <Skills />
       <Projects />
 
-      <footer>{t("app.copyright")}</footer>
+      <footer>© {new Date().getFullYear()} Ashley Drewes.  {t("app.copyright")}</footer>
     </>
   );
 }
 
 export default App;
-
-// new Date().getFullYear +

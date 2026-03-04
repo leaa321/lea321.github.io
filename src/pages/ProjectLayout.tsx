@@ -20,7 +20,7 @@ export function ProjectLayout() {
         </nav>
         <Outlet />
       </main>
-      <footer>© 2026 Ashley Drewes. {t("app.copyright")}</footer>
+      <footer>© {new Date().getFullYear()} Ashley Drewes.  {t("app.copyright")}</footer>
     </>
   );
 }

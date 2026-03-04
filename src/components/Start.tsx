@@ -87,10 +87,6 @@ function Start() {
           </a>
         </div>
         <p className="text-box">
-          I'm currently doing my apprenticeship at HEC as a software engineer. I
-          really enjoy coding and trying out new stuff. Outside of career and
-          academics, I enjoy playing volleyball, editing videos, running and
-          cooking!
           {t("start.text")}
         </p>
       </div>

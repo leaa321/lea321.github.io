@@ -31,7 +31,7 @@
     "start": {
         "greeting": "Hi I'm",
         "location": "Germany, Bremen",
-        "text": "I'm currently doing my apprenticeship at HEC as a software Engineer. I really enjoy coding and trying out new stuff. Outside of career and academics, I enjoy playing volleyball, editing Videos, running and cooking!"
+        "text": "I'm currently doing my apprenticeship at HEC as a software engineer. I really enjoy coding and trying out new stuff. Outside of career and academics, I enjoy playing volleyball, editing videos, running and cooking!"
     },
     "techstack": {
         "title": "Tech stack"
@@ -62,7 +62,7 @@
         },
         "sorting": {
             "title": "Sorting of tasks",
-            "descriptionOne": "Tasks can be sorted by categories to keep things clear and structured. The app comes with a few default categories, but you can create your own and assign a color to each one for easy recognition. Tasks can also be grouped by how often they repeat: daily, weekly, or monthly.",
+            "descriptionOne": "Tasks can be sorted by categories to keep things clear and structured. The app comes with a few default categories, but you can create your own and assign a color or icon to each one for easy recognition. Tasks can also be grouped by how often they repeat: daily, weekly, or monthly.",
             "descriptionTwo": "When a recurring task is completed, it’s marked as done and removed from the active list until its next due time, so a weekly task like vacuuming only shows up again the following week."
         },
         "backend": {
