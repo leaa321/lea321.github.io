@@ -1,0 +1,109 @@
+{
+    "app": {
+        "copyright": " All rights reserved."
+    },
+    "education": {
+        "title": "Education",
+        "text": {
+            "hec": "started my apprenticeship at HEC",
+            "police": "studied for one year at the university of public administration and did my police studies there",
+            "school": "finished my A-Levels at Gymnaisium Syke"
+        }
+    },
+    "projects": {
+        "description": {
+            "partyApp": "A custom party app we built for my fathers 49th birthday.",
+            "ourHome": "I’m currently working on an Angular app where two partners manage shared tasks and individually earn points to unlock their own rewards."
+        },
+        "title": "Projects",
+        "button": "View Projects"
+    },
+    "skills": {
+        "title": "Skills",
+        "text": {
+            "angular": "I’m learning Angular by building a shared to-do app and I'm really enjoying working with the framework.",
+            "react": "I built this website using React, focusing on a clean and simple structure.",
+            "sass": "I use Sass for styling because it keeps the design clean and scalable, and I enjoy working with it.",
+            "html": "HTML is the foundation of my web projects and always part of my workflow.",
+            "java": "I’m learning Java in my apprenticeship and use it to build backend applications."
+        }
+    },
+    "start": {
+        "greeting": "Hi I'm",
+        "location": "Germany, Bremen",
+        "text": "I'm currently doing my apprenticeship at HEC as a software Engineer. I really enjoy coding and trying out new stuff. Outside of career and academics, I enjoy playing volleyball, editing Videos, running and cooking!"
+    },
+    "techstack": {
+        "title": "Tech stack"
+    },
+    "ourHomePage": {
+        "start": {
+            "description": "I’m still working on OurHome, an Angular task app built for two people. You create tasks, assign them to you or your partner, and earn points when they’re completed."
+        },
+        "whatItIs": {
+            "title": "What it is",
+            "descriptionOne": "I’m currently building OurHome as a way to learn Angular while solving a very real problem: managing a shared household. Keeping track of chores, responsibilities, and fairness between partners or roommates can quickly become messy and, honestly, not very fun.",
+            "descriptionTwo": "With OurHome, I want to turn that friction into something more motivating by adding light competition and rewards. Tasks earn points, points unlock personal rewards, and everyday household work becomes more engaging instead of a constant source of discussion.",
+            "descriptionThree": "The goal is to make sharing a home clearer, fairer, and a bit more fun through a simple, game-like system."
+        },
+        "whatItFeatures": {
+            "title": "What it features",
+            "features": {
+                "featureOne": "See your active tasks and a history of completed ones.",
+                "featureTwo": "Manage available rewards and view rewards you’ve already collected.",
+                "featureThree": "Earn points for completed tasks to unlock rewards.",
+                "featureFour": "General settings plus the ability to add your own tasks, rewards, and categories.",
+                "featureFive": "A time system that tracks tasks that repeat daily, weekly, or monthly."
+            }
+        },
+        "settings": {
+            "title": "Settings",
+            "description": "The settings area includes general and account settings, partner management, and full customization options, allowing you to create and manage your own tasks, rewards, and categories in one place."
+        },
+        "sorting": {
+            "title": "Sorting of tasks",
+            "descriptionOne": "Tasks can be sorted by categories to keep things clear and structured. The app comes with a few default categories, but you can create your own and assign a color to each one for easy recognition. Tasks can also be grouped by how often they repeat: daily, weekly, or monthly.",
+            "descriptionTwo": "When a recurring task is completed, it’s marked as done and removed from the active list until its next due time, so a weekly task like vacuuming only shows up again the following week."
+        },
+        "backend": {
+            "title": "Backend logic",
+            "springBoot": {
+                "title": "Spring Boot API",
+                "description": " The backend is a Java Spring Boot REST API that manages tasks, recurring schedules, points, rewards, and categories. It exposes clean endpoints the Angular frontend uses to create, update, and track everything."
+            },
+            "firebase": {
+                "title": "Firebase Authentication",
+                "description": "The account system is based on Firebase Authentication, which handles sign-up, login, and user identity. Since this is my first time working with Firebase, I’m currently learning and integrating the authentication step by step."
+            }
+        },
+        "extra": "More stuff coming soon..."
+    },
+    "partyPage": {
+        "title": "Custom Party App",
+        "description": "A custom party app we built for my fathers 49th birthday.",
+        "whatItIs": {
+            "title": "What it is",
+            "descriptionOne": "This app was designed for one event: guests open a single link and get access to interactive activities. The goal was to make the party feel personal and playful, and to get everyone involved.",
+            "descriptionTwo": "Also because everybody got a random partner, it encouraged people to talk to others they did not know well."
+        },
+        "whatItFeatures": {
+            "title": "What it features",
+            "features": {
+                "featureOne": "Built in admin tool, where you can manage teams, games and gamestates.",
+                "featureTwo": "Guests solve clues and match with their assigned partner for the next activity.",
+                "featureThree": "Everyone can upload and browse party photos in one place. "
+            }
+        },
+        "admin": {
+            "textOne": "The app includes a password-protected admin dashboard for full game management. Admins can create and manage groups and players, edit individual attributes, and access each player’s QR code.",
+            "textTwo": "A central control panel allows starting games, selecting active questions, and importing or exporting the full game state as JSON."
+        },
+        "sharing": {
+            "title": "Sharing tool",
+            "description": "A shared gallery allows all guests to upload and download photos. A separate sharing view collects answers to fun questions, displaying each submission together with the group it came from, visible to everyone in real time."
+        }
+    },
+    "projectLayout": {
+        "buttonText": "Back to portfolio"
+    }
+}

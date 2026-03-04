@@ -1,0 +1,109 @@
+{
+    "app": {
+        "copyright": "Alle Rechte vorbehalten."
+    },
+    "education": {
+        "title": "Ausbildung",
+        "text": {
+            "hec": "habe meine Ausbildung bei HEC begonnen",
+            "police": "habe ein Jahr an der Hochschule für öffentliche Verwaltung studiert und dort mein Polizeistudium absolviert",
+            "school": "habe mein Abitur am Gymnasium Syke gemacht"
+        }
+    },
+    "projects": {
+        "description": {
+            "partyApp": "Eine individuelle Party-App, die wir für den 49. Geburtstag meines Vaters gebaut haben.",
+            "ourHome": "Ich arbeite gerade an einer Angular-App, in der zwei Partner gemeinsame Aufgaben verwalten und individuell Punkte sammeln, um eigene Belohnungen freizuschalten."
+        },
+        "title": "Projekte",
+        "button": "Projekte anschauen"
+    },
+    "skills": {
+        "title": "Fähigkeiten",
+        "text": {
+            "angular": "Ich lerne Angular, indem ich eine gemeinsame To-do-App baue, und habe richtig Spaß daran, mit dem Framework zu arbeiten.",
+            "react": "Ich habe diese Website mit React gebaut und mich dabei auf eine saubere und einfache Struktur konzentriert.",
+            "sass": "Ich nutze Sass fürs Styling, weil es das Design sauber und skalierbar hält, und ich arbeite gerne damit.",
+            "html": "HTML ist die Grundlage meiner Webprojekte und gehört immer zu meinem Workflow.",
+            "java": "Ich lerne Java in meiner Ausbildung und nutze es, um Backend-Anwendungen zu bauen."
+        }
+    },
+    "start": {
+        "greeting": "Hi, ich bin",
+        "location": "Deutschland, Bremen",
+        "text": "Ich mache aktuell meine Ausbildung bei HEC als Software Engineer. Ich liebe es zu coden und neue Sachen auszuprobieren. Neben Beruf und Ausbildung spiele ich gerne Volleyball, schneide Videos, gehe laufen und koche!"
+    },
+    "techstack": {
+        "title": "Tech-Stack"
+    },
+    "ourHomePage": {
+        "start": {
+            "description": "Ich arbeite noch an OurHome, einer Angular-Task-App für zwei Personen. Du erstellst Aufgaben, weist sie dir oder deinem Partner zu und sammelst Punkte, wenn sie erledigt sind."
+        },
+        "whatItIs": {
+            "title": "Was es ist",
+            "descriptionOne": "Ich entwickle OurHome gerade, um Angular zu lernen und gleichzeitig ein sehr reales Problem zu lösen: einen gemeinsamen Haushalt zu organisieren. Den Überblick über Aufgaben, Verantwortlichkeiten und Fairness zwischen Partnern oder Mitbewohnern zu behalten, kann schnell chaotisch werden und macht ehrlich gesagt nicht immer Spaß.",
+            "descriptionTwo": "Mit OurHome möchte ich diese Reibung in etwas Motivierenderes verwandeln, indem ich leichte Competition und Belohnungen einbaue. Aufgaben bringen Punkte, Punkte schalten persönliche Belohnungen frei, und alltägliche Hausarbeit wird dadurch eher spielerisch statt ständig Diskussionsthema.",
+            "descriptionThree": "Das Ziel ist, das Zusammenleben klarer, fairer und ein bisschen mehr Spaß zu machen – durch ein simples, spielähnliches System."
+        },
+        "whatItFeatures": {
+            "title": "Was es kann",
+            "features": {
+                "featureOne": "Sieh deine aktiven Aufgaben und den Verlauf erledigter Aufgaben.",
+                "featureTwo": "Verwalte verfügbare Belohnungen und sieh dir Belohnungen an, die du bereits eingelöst hast.",
+                "featureThree": "Verdiene Punkte für erledigte Aufgaben, um Belohnungen freizuschalten.",
+                "featureFour": "Allgemeine Einstellungen sowie die Möglichkeit, eigene Aufgaben, Belohnungen und Kategorien hinzuzufügen.",
+                "featureFive": "Ein Zeitsystem, das Aufgaben verfolgt, die sich täglich, wöchentlich oder monatlich wiederholen."
+            }
+        },
+        "settings": {
+            "title": "Einstellungen",
+            "description": "Der Einstellungsbereich umfasst allgemeine und Kontoeinstellungen, Partnerverwaltung und vollständige Anpassungsoptionen, sodass du eigene Aufgaben, Belohnungen und Kategorien an einem Ort erstellen und verwalten kannst."
+        },
+        "sorting": {
+            "title": "Sortierung der Aufgaben",
+            "descriptionOne": "Aufgaben können nach Kategorien sortiert werden, damit alles klar und strukturiert bleibt. Die App bringt ein paar Standardkategorien mit, aber du kannst eigene erstellen und jeder eine Farbe zuweisen, um sie schnell zu erkennen. Aufgaben können außerdem danach gruppiert werden, wie oft sie sich wiederholen: täglich, wöchentlich oder monatlich.",
+            "descriptionTwo": "Wenn eine wiederkehrende Aufgabe erledigt wird, wird sie als erledigt markiert und aus der aktiven Liste entfernt, bis sie wieder fällig ist – sodass eine wöchentliche Aufgabe wie Staubsaugen erst in der folgenden Woche wieder erscheint."
+        },
+        "backend": {
+            "title": "Backend-Logik",
+            "springBoot": {
+                "title": "Spring-Boot-API",
+                "description": "Das Backend ist eine Java Spring Boot REST-API, die Aufgaben, Wiederholungspläne, Punkte, Belohnungen und Kategorien verwaltet. Sie stellt saubere Endpunkte bereit, die das Angular-Frontend nutzt, um alles zu erstellen, zu aktualisieren und zu verfolgen."
+            },
+            "firebase": {
+                "title": "Firebase-Authentifizierung",
+                "description": "Das Kontosystem basiert auf Firebase Authentication, das Registrierung, Login und Nutzeridentität übernimmt. Da ich zum ersten Mal mit Firebase arbeite, lerne ich gerade die Integration und baue die Authentifizierung Schritt für Schritt ein."
+            }
+        },
+        "extra": "Mehr kommt bald..."
+    },
+    "partyPage": {
+        "title": "Individuelle Party-App",
+        "description": "Eine individuelle Party-App, die wir für den 49. Geburtstag meines Vaters gebaut haben.",
+        "whatItIs": {
+            "title": "Was es ist",
+            "descriptionOne": "Diese App wurde für ein einziges Event gebaut: Gäste öffnen einen einzigen Link und bekommen Zugriff auf interaktive Aktivitäten. Ziel war es, die Party persönlicher und spielerischer zu machen und alle einzubinden.",
+            "descriptionTwo": "Außerdem hat jede Person einen zufälligen Partner bekommen, was dazu motiviert hat, mit Leuten zu sprechen, die man nicht so gut kannte."
+        },
+        "whatItFeatures": {
+            "title": "Was es kann",
+            "features": {
+                "featureOne": "Integriertes Admin-Tool, mit dem du Teams, Spiele und Spielstände verwalten kannst.",
+                "featureTwo": "Gäste lösen Hinweise und finden sich mit ihrem zugewiesenen Partner für die nächste Aktivität zusammen.",
+                "featureThree": "Alle können Partyfotos an einem Ort hochladen und durchstöbern."
+            }
+        },
+        "admin": {
+            "textOne": "Die App enthält ein passwortgeschütztes Admin-Dashboard zur vollständigen Spielverwaltung. Admins können Gruppen und Spieler erstellen und verwalten, einzelne Attribute bearbeiten und auf den QR-Code jedes Spielers zugreifen.",
+            "textTwo": "Ein zentrales Control Panel ermöglicht das Starten von Spielen, das Auswählen aktiver Fragen sowie das Importieren oder Exportieren des gesamten Spielstands als JSON."
+        },
+        "sharing": {
+            "title": "Sharing-Tool",
+            "description": "Eine gemeinsame Galerie ermöglicht es allen Gästen, Fotos hoch- und herunterzuladen. Eine separate Sharing-Ansicht sammelt Antworten auf lustige Fragen und zeigt jede Einreichung zusammen mit der Gruppe, aus der sie stammt – in Echtzeit für alle sichtbar."
+        }
+    },
+    "projectLayout": {
+        "buttonText": "Zurück zum Portfolio"
+    }
+}
