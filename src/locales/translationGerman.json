@@ -6,7 +6,7 @@
         "title": "Ausbildung",
         "text": {
             "hec": "habe meine Ausbildung bei HEC begonnen",
-            "police": "habe ein Jahr an der Hochschule für öffentliche Verwaltung studiert und dort mein Polizeistudium absolviert",
+            "police": "habe ein Jahr an der Hochschule für öffentliche Verwaltung im Bereich Polizeivollzugsdienst studiert",
             "school": "habe mein Abitur am Gymnasium Syke gemacht"
         }
     },
@@ -21,7 +21,7 @@
     "skills": {
         "title": "Fähigkeiten",
         "text": {
-            "angular": "Ich lerne Angular, indem ich eine gemeinsame To-do-App baue, und habe richtig Spaß daran, mit dem Framework zu arbeiten.",
+            "angular": "Ich lerne derzeit Angular, indem ich eine gemeinsame To-do-App baue, und habe richtig Spaß daran, mit dem Framework zu arbeiten.",
             "react": "Ich habe diese Website mit React gebaut und mich dabei auf eine saubere und einfache Struktur konzentriert.",
             "sass": "Ich nutze Sass fürs Styling, weil es das Design sauber und skalierbar hält, und ich arbeite gerne damit.",
             "html": "HTML ist die Grundlage meiner Webprojekte und gehört immer zu meinem Workflow.",
@@ -44,7 +44,7 @@
             "title": "Was es ist",
             "descriptionOne": "Ich entwickle OurHome gerade, um Angular zu lernen und gleichzeitig ein sehr reales Problem zu lösen: einen gemeinsamen Haushalt zu organisieren. Den Überblick über Aufgaben, Verantwortlichkeiten und Fairness zwischen Partnern oder Mitbewohnern zu behalten, kann schnell chaotisch werden und macht ehrlich gesagt nicht immer Spaß.",
             "descriptionTwo": "Mit OurHome möchte ich diese Reibung in etwas Motivierenderes verwandeln, indem ich leichte Competition und Belohnungen einbaue. Aufgaben bringen Punkte, Punkte schalten persönliche Belohnungen frei, und alltägliche Hausarbeit wird dadurch eher spielerisch statt ständig Diskussionsthema.",
-            "descriptionThree": "Das Ziel ist, das Zusammenleben klarer, fairer und ein bisschen mehr Spaß zu machen – durch ein simples, spielähnliches System."
+            "descriptionThree": "Das Ziel ist, das Zusammenleben klarer, fairer und ein bisschen mehr Spaß zu machen."
         },
         "whatItFeatures": {
             "title": "Was es kann",
@@ -63,7 +63,7 @@
         "sorting": {
             "title": "Sortierung der Aufgaben",
             "descriptionOne": "Aufgaben können nach Kategorien sortiert werden, damit alles klar und strukturiert bleibt. Die App bringt ein paar Standardkategorien mit, aber du kannst eigene erstellen und jeder eine Farbe zuweisen, um sie schnell zu erkennen. Aufgaben können außerdem danach gruppiert werden, wie oft sie sich wiederholen: täglich, wöchentlich oder monatlich.",
-            "descriptionTwo": "Wenn eine wiederkehrende Aufgabe erledigt wird, wird sie als erledigt markiert und aus der aktiven Liste entfernt, bis sie wieder fällig ist – sodass eine wöchentliche Aufgabe wie Staubsaugen erst in der folgenden Woche wieder erscheint."
+            "descriptionTwo": "Wenn eine wiederkehrende Aufgabe erledigt wird, wird sie als erledigt markiert und aus der aktiven Liste entfernt, bis sie wieder fällig ist, sodass eine wöchentliche Aufgabe wie Staubsaugen erst in der folgenden Woche wieder erscheint."
         },
         "backend": {
             "title": "Backend-Logik",
@@ -100,7 +100,7 @@
         },
         "sharing": {
             "title": "Sharing-Tool",
-            "description": "Eine gemeinsame Galerie ermöglicht es allen Gästen, Fotos hoch- und herunterzuladen. Eine separate Sharing-Ansicht sammelt Antworten auf lustige Fragen und zeigt jede Einreichung zusammen mit der Gruppe, aus der sie stammt – in Echtzeit für alle sichtbar."
+            "description": "Eine gemeinsame Galerie ermöglicht es allen Gästen, Fotos hoch- und herunterzuladen. Eine separate Sharing-Ansicht sammelt Antworten auf lustige Fragen und zeigt jede Einreichung zusammen mit der Gruppe, aus der sie stammt, in Echtzeit für alle sichtbar."
         }
     },
     "projectLayout": {
