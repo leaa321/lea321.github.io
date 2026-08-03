@@ -13,6 +13,7 @@ function Skills() {
         { name: "Sass", iconKey: "scss", text: t("skills.text.sass") },
         { name: "Html", iconKey: "html", text: t("skills.text.html") },
         { name: "Java", iconKey: "java", text: t("skills.text.java") },
+        { name: "Flutter", iconKey: "flutter", text: t("skills.text.flutter") }
     ];
 
     useEffect(() => {

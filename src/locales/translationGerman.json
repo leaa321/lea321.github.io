@@ -25,7 +25,8 @@
             "react": "Ich habe diese Website mit React gebaut und mich dabei auf eine saubere und einfache Struktur konzentriert.",
             "sass": "Ich nutze Sass fürs Styling, weil es das Design sauber und skalierbar hält, und ich arbeite gerne damit.",
             "html": "HTML ist die Grundlage meiner Webprojekte und gehört immer zu meinem Workflow.",
-            "java": "Ich lerne Java in meiner Ausbildung und nutze es, um Backend-Anwendungen zu bauen."
+            "java": "Ich lerne Java in meiner Ausbildung und nutze es, um Backend-Anwendungen zu bauen.",
+            "flutter": "Ich habe Flutter kurz während meiner Ausbildung gelernt und damit eine Klamotten-Planer-App erstellt."
         }
     },
     "start": {

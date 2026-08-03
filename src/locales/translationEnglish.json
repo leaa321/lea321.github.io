@@ -25,7 +25,8 @@
             "react": "I built this website using React, focusing on a clean and simple structure.",
             "sass": "I use Sass for styling because it keeps the design clean and scalable, and I enjoy working with it.",
             "html": "HTML is the foundation of my web projects and always part of my workflow.",
-            "java": "I’m learning Java in my apprenticeship and use it to build backend applications."
+            "java": "I’m learning Java in my apprenticeship and use it to build backend applications.",
+            "flutter": "I’m learning Flutter in my apprenticeship and used it to build an outfit planner app."
         }
     },
     "start": {

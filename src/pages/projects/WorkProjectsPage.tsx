@@ -1,8 +1,8 @@
-import {useTranslation} from "react-i18next";
+import { useTranslation } from "react-i18next";
 
 
 export function WorkProjectsPage() {
-    const techKeys: string[] = ["scss", "springboot", "angular"] as const;
+    const techKeys: string[] = ["scss", "springboot", "angular", "flutter"] as const;
     const { t } = useTranslation();
 
     return (
