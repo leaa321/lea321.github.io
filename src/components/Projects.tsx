@@ -25,6 +25,13 @@ function Projects() {
       imageLink: ourHome,
       tags: ["angular", "scss", "springboot", "firebase"],
     },
+      {
+          name: "Work Projects",
+          description: t("projects.description.workProjects"),
+          link: "/projects/workProjects",
+          imageLink: ourHome,
+          tags: ["angular", "scss", "springboot"],
+      },
   ];
 
   return (

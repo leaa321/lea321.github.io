@@ -6,6 +6,7 @@ import { OurHomePage } from "../pages/projects/OurhomePage";
 import { ScrollManager } from "./ScrollMangager";
 import { NotFound } from "../components/NotFound";
 import ScrollToAnchor from "./ScrollToAnchor";
+import WorkProjectsPage from "../pages/projects/WorkProjectsPage.tsx";
 
 export function MyRouter() {
   return (
@@ -19,6 +20,7 @@ export function MyRouter() {
         <Route path="/projects" element={<ProjectLayout />}>
           <Route path="partyApp" element={<PartyPage />} />
           <Route path="ourHome" element={<OurHomePage />} />
+           <Route path="workProjects" element={<WorkProjectsPage/>}/>
         </Route>
 
         <Route path="*" element={<NotFound />} />
