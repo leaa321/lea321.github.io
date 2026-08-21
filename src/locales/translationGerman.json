@@ -106,5 +106,36 @@
     },
     "projectLayout": {
         "buttonText": "Zurück zum Portfolio"
+    },
+    "workProjectsPage": {
+        "title": "Projekte aus meiner Ausbildung",
+        "description": "Eine Sammlung von kleinen bis mittelgroßen Projekten, die ich in meiner Ausbildung gemacht habe.",
+        "navigate": "Springe zu den Projekten"
+    },
+    "workProjects": {
+        "whatItIs": "Was es ist",
+        "whatItDoes": "Was es kann",
+        "salon": {
+            "title": "Friseursalon-Website",
+            "description": "Eine Website, die ich für einen simulierten Kunden erstellt habe. Der Fokus lag dabei auf dem Design und der Arbeit mit SCSS.",
+            "whatItIs": "Die Website wurde auf Grundlage eines simulierten Kundengesprächs zunächst als Mockup geplant und anschließend umgesetzt. Es handelt sich um eine Website für einen Friseursalon, auf der Kundinnen und Kunden wichtige Informationen wie Preise, Öffnungszeiten oder die Anfahrt finden können.",
+            "features": {
+                "one": "Übersicht der wichtigsten Informationen auf der Startseite",
+                "two": "Verschiedene Designelemente für eine angenehme User Experience",
+                "three": "Light- und Darkmode",
+                "four": "Berücksichtigung von Kriterien der Barrierefreiheit"
+            }
+        },
+        "course": {
+            "title": "Kursverwaltung mit Angular",
+            "description": "Eine Kursverwaltung mit Angular zur Verwaltung von Kursen und Schülern.",
+            "whatItIs": "Die Anwendung wurde im Rahmen einer Aufgabe entwickelt, um Angular besser kennenzulernen. Dabei konnte ich meine Kenntnisse in Angular vertiefen und zusätzliche Erfahrung im Umgang mit Datenbanken sammeln.",
+            "features": {
+                "one": "Filtern von Kursen nach Verfügbarkeit und Kategorien",
+                "two": "Direkte Aktualisierung von Werten ohne Neuladen der Seite",
+                "three": "Light- und Darkmode",
+                "four": "Toasts als direktes Feedback für den Nutzer"
+            }
+        }
     }
 }

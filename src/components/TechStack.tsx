@@ -4,7 +4,7 @@ import { IoCodeOutline } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
 import "../i18n"
 
-type TechStackType = {
+export type TechStackType = {
   techKeys: string[];
 };
 

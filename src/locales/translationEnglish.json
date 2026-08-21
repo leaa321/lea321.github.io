@@ -106,5 +106,36 @@
     },
     "projectLayout": {
         "buttonText": "Back to portfolio"
+    },
+    "workProjectsPage": {
+        "title": "Projects from my Apprenticeship",
+        "description": "A collection of small to medium-sized projects that I completed during my apprenticeship.",
+        "navigate": "Jump to projects"
+    },
+    "workProjects": {
+        "whatItIs": "What it is",
+        "whatItDoes": "What it does",
+        "salon": {
+            "title": "Hair Salon Website",
+            "description": "A website I created for a simulated client. The main focus was on design and working with SCSS.",
+            "whatItIs": "The website was first planned as a mockup based on a simulated client meeting and was then implemented. It is a website for a hair salon where customers can find important information such as prices, opening hours, and directions.",
+            "features": {
+                "one": "Overview of the most important information on the homepage",
+                "two": "Various design elements for a pleasant user experience",
+                "three": "Light and dark mode",
+                "four": "Consideration of accessibility guidelines"
+            }
+        },
+        "course": {
+            "title": "Course Management with Angular",
+            "description": "A course management application built with Angular for managing courses and students.",
+            "whatItIs": "The application was developed as part of an assignment to gain a better understanding of Angular. During the project, I was able to deepen my knowledge of Angular and gain additional experience working with databases.",
+            "features": {
+                "one": "Filtering courses by availability and category",
+                "two": "Instant value updates without reloading the page",
+                "three": "Light and dark mode",
+                "four": "Toast notifications as direct feedback for the user"
+            }
+        }
     }
 }
