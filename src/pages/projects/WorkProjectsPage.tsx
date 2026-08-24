@@ -148,3 +148,4 @@ export default WorkProjectsPage;
 // karteikarten anwendung
 // unter links fuer bestimmte projekte
 // responsive
+// - icon und center title
