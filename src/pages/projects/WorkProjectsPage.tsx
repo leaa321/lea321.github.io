@@ -1,9 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { IoArrowForward, IoBodyOutline, IoFilter, IoHandLeftOutline, IoImageOutline, IoPeopleOutline, IoRefresh, IoSchoolOutline } from "react-icons/io5";
-import ourHomeRewardPage from "../../assets/projects/ourhome-rewardpage.png";
 import { WorkProjectsPageCard, type ProjectCardProps } from "./WorkProjectsPageCard";
 import { IoIosCloudyNight, IoIosInformationCircleOutline } from "react-icons/io";
-
+import createEditCourse from "../../assets/projects/kurs/createEdit.png"
+import filterCourse from "../../assets/projects/kurs/filter.png"
+import salonOverview from "../../assets/projects/salon/overview.png"
+import salonOverviewTwo from "../../assets/projects/salon/overviewTwo.png"
 
 export function WorkProjectsPage() {
     const { t } = useTranslation();
@@ -16,12 +18,12 @@ export function WorkProjectsPage() {
             images:
                 [
                     {
-                        src: ourHomeRewardPage,
-                        alt: "Project overview",
+                        src: salonOverview,
+                        alt: "overview of salon website",
                     },
                     {
-                        src: ourHomeRewardPage,
-                        alt: "Project detail",
+                        src: salonOverviewTwo,
+                        alt: "overview of salon website",
                     },
                 ],
             whatItIs: t("workProjects.salon.whatItIs"),
@@ -58,12 +60,12 @@ export function WorkProjectsPage() {
             images:
                 [
                     {
-                        src: ourHomeRewardPage,
-                        alt: "Project overview",
+                        src: createEditCourse,
+                        alt: "overview of editing and creating courses",
                     },
                     {
-                        src: ourHomeRewardPage,
-                        alt: "Project detail",
+                        src: filterCourse,
+                        alt: "overview of sorting courses",
                     },
                 ],
             whatItIs: t("workProjects.course.whatItIs"),
@@ -135,7 +137,6 @@ export function WorkProjectsPage() {
                     />
                 ))}
             </div>
-
         </div>
     )
 }
