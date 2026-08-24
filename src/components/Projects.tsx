@@ -2,6 +2,7 @@ import "../style/projects.scss";
 import { IoIosArrowForward } from "react-icons/io";
 import partyGame from "../assets/projects/party-landingpage-short.png";
 import ourHome from "../assets/projects/ourhomelogo.png";
+import salon from "../assets/projects/salon/startseite.png";
 import { Link } from "react-router-dom";
 import { ICONS_BY_KEY } from "./Icon";
 import { useTranslation } from "react-i18next";
@@ -25,13 +26,13 @@ function Projects() {
       imageLink: ourHome,
       tags: ["angular", "scss", "springboot", "firebase"],
     },
-      {
-          name: "Work Projects",
-          description: t("projects.description.workProjects"),
-          link: "/projects/workProjects",
-          imageLink: ourHome,
-          tags: ["angular", "scss", "springboot"],
-      },
+    {
+      name: t("projects.description.workProjects.title"),
+      description: t("projects.description.workProjects.text"),
+      link: "/projects/workProjects",
+      imageLink: salon,
+      tags: ["angular", "scss", "springboot", "nodejs"],
+    },
   ];
 
   return (

@@ -13,7 +13,11 @@
     "projects": {
         "description": {
             "partyApp": "A custom party app we built for my fathers 49th birthday.",
-            "ourHome": "I’m currently working on an Angular app where two partners manage shared tasks and individually earn points to unlock their own rewards."
+            "ourHome": "I’m currently working on an Angular app where two partners manage shared tasks and individually earn points to unlock their own rewards.",
+            "workProjects": {
+                "text": "Small projects, I did in my apprenticeship.",
+                "title": "Study projects"
+            }
         },
         "title": "Projects",
         "button": "View Projects"

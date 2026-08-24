@@ -108,8 +108,8 @@ export function WorkProjectsPage() {
                 </p>
             </div>
 
-            <div className="project-navigation">
-                <nav>
+            <div className="project-navigation-container">
+                <nav className="project-navigation">
                     <h4 className="navigate-title">
                         {t("workProjectsPage.navigate")}
                     </h4>
@@ -120,13 +120,12 @@ export function WorkProjectsPage() {
                             className="project-navigation-link"
                         >
                             {project.title}
-                            <IoArrowForward />
+                            <IoArrowForward className="arrow-icon" />
 
                         </a>
                     ))}
                 </nav>
             </div>
-
 
             <div className="work-project-list">
                 {workProjects.map((project) => (
@@ -143,6 +142,8 @@ export function WorkProjectsPage() {
 
 export default WorkProjectsPage;
 
+// fix scroll
 //  dailyfit
 // karteikarten anwendung
 // unter links fuer bestimmte projekte
+// responsive

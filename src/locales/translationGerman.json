@@ -13,7 +13,11 @@
     "projects": {
         "description": {
             "partyApp": "Eine individuelle Party-App, die wir für den 49. Geburtstag meines Vaters gebaut haben.",
-            "ourHome": "Ich arbeite gerade an einer Angular-App, in der zwei Partner gemeinsame Aufgaben verwalten und individuell Punkte sammeln, um eigene Belohnungen freizuschalten."
+            "ourHome": "Ich arbeite gerade an einer Angular-App, in der zwei Partner gemeinsame Aufgaben verwalten und individuell Punkte sammeln, um eigene Belohnungen freizuschalten.",
+            "workProjects": {
+                "text": "Kleine Projekte die ich im Laufe meiner Ausbildung gemacht habe.",
+                "title": "Übungsprojekte"
+            }
         },
         "title": "Projekte",
         "button": "Projekte anschauen"

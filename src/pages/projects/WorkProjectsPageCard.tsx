@@ -46,9 +46,9 @@ export function WorkProjectsPageCard({
             className="project-page-card work-project-card"
         >
             <a
-                href="#work-projects-top"
                 className="back-to-top"
                 aria-label="Back to top"
+                onClick={() => window.scrollTo({ top: 0, left: 0, behavior: "smooth" })}
             >
                 <IoArrowUpOutline />
             </a>

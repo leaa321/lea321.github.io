@@ -6,7 +6,7 @@
     align-items: center;
     transition: ease-in 1s;
 
-    .project-navigation {
+    .project-navigation-container {
         .navigate-title {
             align-self: center;
             margin: 0;
@@ -17,13 +17,13 @@
         border-radius: 10px;
         width: 80%;
 
-        nav {
+        .project-navigation {
             display: flex;
             flex-direction: column;
             gap: 10px;
             font-size: var(--text-size-medium-small);
 
-            a {
+            .project-navigation-link {
                 background-color: var(--color-blur);
                 padding: 10px 20px;
                 border-radius: 10px;
@@ -32,8 +32,10 @@
                 display: flex;
                 justify-content: space-between;
 
-                :hover {
-                    transform: scale(2);
+                &:hover {
+                    .arrow-icon {
+                        transform: translateX(4px);
+                    }
                 }
             }
         }
