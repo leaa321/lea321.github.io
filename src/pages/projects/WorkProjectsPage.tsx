@@ -97,7 +97,6 @@ export function WorkProjectsPage() {
         },
     ]
     return (
-
         <div className="project-page"
             id="work-projects-top"
         >
@@ -145,3 +144,5 @@ export default WorkProjectsPage;
 //  dailyfit
 //      unter links fuer bestimmte projekte
 // karteikarten anwendung
+// bilder anders darstellen
+// groesser und kleiner groesser machen
