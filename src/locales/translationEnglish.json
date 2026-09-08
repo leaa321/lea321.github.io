@@ -140,6 +140,17 @@
                 "three": "Light and dark mode",
                 "four": "Toast notifications as direct feedback for the user"
             }
+        },
+        "cards": {
+            "title": "Flashcard Web Application",
+            "description": "A web application for creating, organizing and studying flashcards in topic-based groups.",
+            "whatItIs": "The application was developed to build a complete web application using Angular and Spring Boot. Users can create their own flashcard groups with a topic and description and manage flashcards within them. Login and registration functionality ensures that the content is associated with each individual user. The application also includes a study mode that checks answers, tracks mistakes and displays the correct answers.",
+            "features": {
+                "one": "Create, edit and delete flashcard groups and flashcards",
+                "two": "Login and registration with user-based authentication",
+                "three": "Study mode with mistake tracking and correct answer display",
+                "four": "Toasts providing direct feedback to the user"
+            }
         }
     }
 }

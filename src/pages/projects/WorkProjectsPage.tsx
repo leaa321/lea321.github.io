@@ -1,11 +1,14 @@
 import { useTranslation } from "react-i18next";
-import { IoArrowForward, IoBodyOutline, IoFilter, IoHandLeftOutline, IoImageOutline, IoPeopleOutline, IoRefresh, IoSchoolOutline } from "react-icons/io5";
+import { IoArrowForward, IoBodyOutline, IoFilter, IoHandLeftOutline, IoImageOutline, IoPencil, IoPencilOutline, IoPeopleOutline, IoPersonAddOutline, IoRefresh, IoSchoolOutline } from "react-icons/io5";
 import { WorkProjectsPageCard, type ProjectCardProps } from "./WorkProjectsPageCard";
 import { IoIosCloudyNight, IoIosInformationCircleOutline } from "react-icons/io";
 import createEditCourse from "../../assets/projects/kurs/createEdit.png"
 import filterCourse from "../../assets/projects/kurs/filter.png"
 import salonOverview from "../../assets/projects/salon/overview.png"
 import salonOverviewTwo from "../../assets/projects/salon/overviewTwo.png"
+import cardsOverviewOne from "../../assets/projects/cards/ChatGPT Image 8. Sept. 2026, 15_22_02 (1).png"
+import cardsOverviewTwo from "../../assets/projects/cards/ChatGPT Image 8. Sept. 2026, 15_22_03 (2).png"
+
 
 export function WorkProjectsPage() {
     const { t } = useTranslation();
@@ -85,6 +88,49 @@ export function WorkProjectsPage() {
                     },
                     {
                         text: t("workProjects.course.features.four"),
+                        icon: IoIosInformationCircleOutline,
+                    },
+                ],
+            techKeys:
+                [
+                    "scss",
+                    "springboot",
+                    "angular",
+                ],
+        },
+        {
+            id: "cards",
+            title: t("workProjects.cards.title"),
+            titleIcon: IoPeopleOutline,
+            description: t("workProjects.cards.description"),
+            images:
+                [
+                    {
+                        src: cardsOverviewOne,
+                        alt: "overview of the group and flash card page",
+                    },
+                    {
+                        src: cardsOverviewTwo,
+                        alt: "overview of the login page and study page",
+                    },
+                ],
+            whatItIs: t("workProjects.cards.whatItIs"),
+            whatItFeatures:
+                [
+                    {
+                        text: t("workProjects.cards.features.one"),
+                        icon: IoPencilOutline,
+                    },
+                    {
+                        text: t("workProjects.cards.features.two"),
+                        icon: IoPersonAddOutline,
+                    },
+                    {
+                        text: t("workProjects.cards.features.three"),
+                        icon: IoSchoolOutline,
+                    },
+                    {
+                        text: t("workProjects.cards.features.four"),
                         icon: IoIosInformationCircleOutline,
                     },
                 ],

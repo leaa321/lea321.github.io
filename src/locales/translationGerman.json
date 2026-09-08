@@ -140,6 +140,17 @@
                 "three": "Light- und Darkmode",
                 "four": "Toasts als direktes Feedback für den Nutzer"
             }
+        },
+        "cards": {
+            "title": "Karteikarten-Webanwendung",
+            "description": "Eine Webanwendung zum Erstellen, Organisieren und Lernen von Karteikarten in thematischen Gruppen.",
+            "whatItIs": "Die Anwendung wurde entwickelt, um eine vollständige Webanwendung mit Angular und Spring Boot umzusetzen. Nutzer können eigene Karteikartengruppen mit Thema und Beschreibung erstellen und darin Karteikarten verwalten. Durch eine Login- und Registrierungsfunktion sind die Inhalte benutzerbezogen gespeichert. Zusätzlich bietet die Anwendung einen Lernmodus, in dem Antworten überprüft, Fehler gezählt und die richtigen Lösungen angezeigt werden.",
+            "features": {
+                "one": "Erstellen, Bearbeiten und Löschen von Karteikartengruppen und Karteikarten",
+                "two": "Login und Registrierung mit benutzerbezogener Authentifizierung",
+                "three": "Lernmodus mit Fehlerzählung und Anzeige der richtigen Antworten",
+                "four": "Toasts als direktes Feedback für den Nutzer"
+            }
         }
     }
 }
