@@ -97,6 +97,7 @@ export function WorkProjectsPage() {
         },
     ]
     return (
+
         <div className="project-page"
             id="work-projects-top"
         >
@@ -109,7 +110,6 @@ export function WorkProjectsPage() {
                     {t("workProjectsPage.description")}
                 </p>
             </div>
-
             <div className="project-navigation-container">
                 <nav className="project-navigation">
                     <h4 className="navigate-title">
@@ -128,7 +128,6 @@ export function WorkProjectsPage() {
                     ))}
                 </nav>
             </div>
-
             <div className="work-project-list">
                 {workProjects.map((project) => (
                     <WorkProjectsPageCard
@@ -143,9 +142,6 @@ export function WorkProjectsPage() {
 
 export default WorkProjectsPage;
 
-// fix scroll
 //  dailyfit
+//      unter links fuer bestimmte projekte
 // karteikarten anwendung
-// unter links fuer bestimmte projekte
-// responsive
-// - icon und center title

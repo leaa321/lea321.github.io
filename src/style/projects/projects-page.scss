@@ -32,6 +32,10 @@
                 display: flex;
                 justify-content: space-between;
 
+                .arrow-icon {
+                    align-self: center;
+                }
+
                 &:hover {
                     .arrow-icon {
                         transform: translateX(4px);
@@ -51,6 +55,9 @@
             gap: 5px;
             align-items: center;
             margin-bottom: 10px;
+            text-align: center;
+            justify-content: center;
+            flex-wrap: wrap;
 
             .project-title-icon {
                 color: var(--accent-color);
@@ -156,6 +163,7 @@
     position: absolute;
     right: 0px;
     top: 90px;
+    padding: 5px;
 
     display: flex;
     align-items: center;
@@ -219,6 +227,7 @@
         position: absolute;
         left: -50px;
         top: 110px;
+        padding: 10px;
 
         display: flex;
         align-items: center;
@@ -243,6 +252,7 @@
 @media (width >=800px) {
     .back-to-top {
         position: absolute;
+        padding: 10px;
         right: -50px;
         top: 150px;
         font-size: var(--icon-size-large);
@@ -253,6 +263,7 @@
     .back-to-top {
         position: absolute;
         right: -10px;
+        padding: 10px;
         top: 150px;
         width: 30px;
         height: 30px;
